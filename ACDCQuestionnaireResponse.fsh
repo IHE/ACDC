@@ -7,7 +7,7 @@ Description:    "Defines constraints and extensions on the QuestionnaireResponse
 * extension contains questionnaireresponse-signature 0..1
 * questionnaire 1..1
 * questionnaire.extension contains ACDCContainedQuestionnaireReferenceExtension 0..*
-* status from valueset "http://ihe.net/fhir/ACDC/ValueSet/ihe-acdc-questionnaireresponse-status" (required)
+* status from ACDCQuestionnaireResponseStatus (required)
 * subject 1..1
 * subject only Reference(Patient)
 * encounter MS

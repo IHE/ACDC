@@ -877,7 +877,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "ACDCQuestionnareResponseStatus"
+          "valueSet": "http://ihe.net/fhir/ACDC/ValueSet/ihe-acdc-questionnaireresponse-status"
         },
         "mapping": [
           {
@@ -1849,7 +1849,7 @@
         "path": "QuestionnaireResponse.status",
         "binding": {
           "strength": "required",
-          "valueSet": "ACDCQuestionnareResponseStatus"
+          "valueSet": "http://ihe.net/fhir/ACDC/ValueSet/ihe-acdc-questionnaireresponse-status"
         }
       },
       {

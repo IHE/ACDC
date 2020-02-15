@@ -36,7 +36,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ihe-launchurl-extension"
+          "reference": "StructureDefinition/questionnaire-launchurl"
         },
         "name": "IHE ACDC Launch URL Extension",
         "description": "Defines the Launch URL Extension used on Questionnaire Resources used by the IHE ACDC Profile",
@@ -57,6 +57,13 @@
         "name": "IHE ACDC QuestionnaireResponse Profile",
         "description": "Defines constraints and extensions on the QuestionnaireResponse Resource for responses used with the IHE ACDC Profile",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ihe-acdc-questionnaireresponse-status"
+        },
+        "name": "Status Values allowed in a QuestionnaireResponse resource",
+        "description": "Defines the Status Values allowed in a QuestionnaireResponse resource used withe IHE ACDC Profile"
       }
     ],
     "page": {
