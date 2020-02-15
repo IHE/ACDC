@@ -1,0 +1,89 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "IHE ACDC Profile",
+  "url": "http://ihe.net/fhir/ACDC/ImplementationGuide/IHE ACDC Profile",
+  "version": "0.1.0",
+  "name": "IHEACDCImplementationGuide",
+  "title": "IHE ACDC Implementation Guide",
+  "status": "active",
+  "publisher": "Keith W. Boone",
+  "contact": [
+    {
+      "name": "Keith W. Boone",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "kboone@ainq.com"
+        }
+      ]
+    }
+  ],
+  "description": "The FHIR IG materials for the IHE AC/DC Profile",
+  "packageId": "IHE ACDC Profile",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihe-acdc-contained-questionnairereference"
+        },
+        "name": "IHE ACDC Contained Questionnaire Reference Extension",
+        "description": "Defines the Contained Questionnaire Reference URL Extension used on QuestionnaireResponse Resources used by the IHE ACDC Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihe-launchurl-extension"
+        },
+        "name": "IHE ACDC Launch URL Extension",
+        "description": "Defines the Launch URL Extension used on Questionnaire Resources used by the IHE ACDC Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihe-acdc-questionnaire"
+        },
+        "name": "IHE ACDC Questionnaire Profile",
+        "description": "Defines constraints and extensions on the Questionnaire Resource for questionnaires used with the IHE ACDC Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihe-acdc-questionnaireresponse"
+        },
+        "name": "IHE ACDC QuestionnaireResponse Profile",
+        "description": "Defines constraints and extensions on the QuestionnaireResponse Resource for responses used with the IHE ACDC Profile",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "IHE ACDC Implementation Guide",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+ "name": "IHE ACDC Profile",
+ "version" : "0.1.0",
+ "canonical" : "http://ihe.net/fhir/ACDC",
+ "url" : "http://ihe.net/fhir/ACDC",
+ "title" : "IHE ACDC Implementation Guide",
+ "description": "The FHIR IG materials for the IHE AC/DC Profile",
+ "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+ },
+ "keywords": [
+   "ACDC",
+   "IHE",
+   "Assessment"
+ ],
+ "language": "en",
+ "author": "Keith W. Boone",
+ "maintainers": [
+   {
+     "name": "Keith W. Boone",
+     "email": "kboone@ainq.com"
+   }
+ ],
+ "license": "CC0-1.0"
+}

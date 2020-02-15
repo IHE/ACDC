@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ACDCQuestionnaireResponseStatus",
+  "id": "ihe-acdc-questionnaireresponse-status",
+  "title": "Status Values allowed in a QuestionnaireResponse resource",
+  "description": "Defines the Status Values allowed in a QuestionnaireResponse resource used withe IHE ACDC Profile",
+  "version": "0.1.0",
+  "url": "http://ihe.net/fhir/ACDC/ValueSet/ihe-acdc-questionnaireresponse-status",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://hl7.org/fhir/ValueSet/questionnaire-answers-status"
+        ]
+      }
+    ],
+    "exclude": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/questionnaire-answers-status",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "in-progress"
+          }
+        ]
+      }
+    ]
+  }
+}
