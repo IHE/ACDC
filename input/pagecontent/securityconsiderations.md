@@ -12,7 +12,7 @@ topics are discussed in Appendix Z.8 with recommendations.
 
 Some data being exchanged in this profile represent the execution of an assessment, a validated instrument, for a patient.  The data
  in this can affect decision treatments, and so may need additional protection against data integrity and data authenticity risks.
- To mitigate data integrity and data authenticity risks, the Assessor may include a questionnaireresponse-signature  extension on
+ To mitigate data integrity and data authenticity risks, the Assessor may include a questionnaireresponse-signature extension on
  the QuestionnaireResponse, or on selected QuestionnaireResponse.item elements.
 
 Assessment instruments are intellectual property which owners may wish to protect in various ways, e.g., licensing agreements,

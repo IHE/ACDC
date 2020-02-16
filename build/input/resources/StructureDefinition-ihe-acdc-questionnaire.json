@@ -421,7 +421,7 @@
         "sliceName": "ACDCLauchURLExtension",
         "short": "Additional content defined by implementations",
         "definition": "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "If items are not present, then the question must report the launch url of an Assessor that can perform the assessment.  An Assessment Requestor that supports the EHR Launch option must launch the assessment instrument using one of the values supplied in this extension.",
+        "comment": "If items are not present, then the question must report the launch url of an Assessor that can perform the assessment.  An Assessment  that supports the EHR Launch option must launch the assessment instrument using one of the values supplied in this extension.",
         "alias": [
           "extensions",
           "user content"
@@ -3226,7 +3226,7 @@
         "id": "Questionnaire.extension:ACDCLauchURLExtension",
         "path": "Questionnaire.extension",
         "sliceName": "ACDCLauchURLExtension",
-        "comment": "If items are not present, then the question must report the launch url of an Assessor that can perform the assessment.  An Assessment Requestor that supports the EHR Launch option must launch the assessment instrument using one of the values supplied in this extension.",
+        "comment": "If items are not present, then the question must report the launch url of an Assessor that can perform the assessment.  An Assessment  that supports the EHR Launch option must launch the assessment instrument using one of the values supplied in this extension.",
         "type": [
           {
             "code": "Extension",
