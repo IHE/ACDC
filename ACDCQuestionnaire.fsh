@@ -4,7 +4,7 @@ Id:             ihe-acdc-questionnaire
 Title:          "IHE ACDC Questionnaire Profile"
 Description:    "Defines constraints and extensions on the Questionnaire Resource for questionnaires used with the IHE ACDC Profile"
 * extension contains ACDCLauchURLExtension 0..* MS
-* extension[ACDCLauchURLExtension] ^comment = "If items are not present, then the question must report the launch url of an Assessor that can perform the assessment.  An Assessment Requestor that supports the EHR Launch option must launch the assessment instrument using one of the values supplied in this extension."
+* extension[ACDCLauchURLExtension] ^comment = "If items are not present, then the question must report the launch url of an Assessor that can perform the assessment.  An Assessment Requester that supports the EHR Launch option must launch the assessment instrument using one of the values supplied in this extension."
 * url           1..1
 * url ^comment = "The canonical identifier for this questionnaire must be present"
 * name          1..1

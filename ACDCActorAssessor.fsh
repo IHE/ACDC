@@ -21,4 +21,4 @@ that has rest.security.cors = true and rest.security.service = "SMART-on-FHIR"
 * rest[0].resource.interaction.documentation = """This interaction corresponds to the IHE PCC-X4 transaction.
 When the QuestionnaireResponse is created, it may include a contained copy of the Questionnaire
 resource that was used to produce the response.  This has proven to be helpful to facilite consumption
-as it avoids additional retrievals of the questionnaire resource by the AssessmentRequestor"""
+as it avoids additional retrievals of the questionnaire resource by the AssessmentRequester"""
