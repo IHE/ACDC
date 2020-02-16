@@ -21,23 +21,25 @@ questions associated with an assessment instrument and obtain a completed respon
 
 These actors participate in the following transactions:
 
-Query Artifact [PCC-X1]
-:   this transaction uses RESTful API to query assessment instruments that meet certain criteria, e.g., by
+<a name='pcc-x1'> </a> Query Artifact [PCC-X1]
+:   The Query Artifact transaction uses RESTful API to query assessment instruments that meet certain criteria, e.g., by
     topic, coded concern, procedure, clinical area, et cetera, retrieving the metadata essential to enable the
     consumer to determine if it wants to know more about the assessment instrument.
 
     The returned result would list the metadata associated with the various Questionnaire resources available
     but need not contain complete data on items in the instrument.
 
-Request Artifact [PCC-X2]
-:   this transaction uses RESTful API to requests the complete details of an Assessment Instrument in
+<a name='pcc-x2'> </a> Request Artifact [PCC-X2]
+:   The Request Artifact transaction uses RESTful API to requests the complete details of an Assessment Instrument in
     order to implement it for evaluation or production use.
 
-Request Assessment [PCC-X3]
-:   this transaction initiates an assessment.
 
-Report Assessment [PCC-X4]
-:   this transaction reports on the results of an assessment via a restful API.
+<a name='pcc-x3'> </a> Request Assessment [PCC-X3]
+:   The Request Assessment transaction initiates an assessment.
+
+
+<a name='pcc-x4'> </a> Report Assessment [PCC-X4]
+:   The Report Assessment transaction reports on the results of an assessment via a restful API.
 
 The figure below depicts how these actors interact with each other through the IHE transactions
 described above.
