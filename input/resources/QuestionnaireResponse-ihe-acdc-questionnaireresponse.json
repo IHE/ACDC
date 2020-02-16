@@ -1,0 +1,216 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "ihe-acdc-questionnaireresponse",
+  "meta": {
+    "profile": [
+      "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
+    ]
+  },
+  "contained": [
+	  {
+		  "resourceType": "Questionnaire",
+		  "id": "contained-questionnaire",
+		  "meta": {
+		    "profile": [
+		      "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"
+		    ]
+		  },
+		  "extension": [
+		    {
+		      "url": "http://ihe.net/fhir/ACDC/StructureDefinition/questionnaire-launchurl",
+		      "valueUri": "https://example.com/launch/PHQ-2"
+		    }
+		  ],
+		  "url": "http://example.com/PHQ-2",
+		  "name": "PHQ-2",
+		  "title": "Patient Health Questionnaire-2",
+		  "date": "2020-02-15",
+		  "publisher": "Integrating the Healthcare Enterprise (IHE)",
+		  "purpose": "The PHQ-2 is the ultra-brief depression measure (using first 2 items of PHQ-9) and ranges from 0-6. Most who use the short PHQ-2 use it for screening and not for monitoring depression",
+		  "description": "Implements the PHQ-2 Depression Screening Assessment Instrument as a FHIR Questionnaire Resource",
+		  "code": [
+		    {
+		      "code": "55757-9",
+		      "system": "http://loinc.org",
+		      "display": "Patient Health Questionnaire 2 item (PHQ-2)"
+		    }
+		  ],
+		  "item": [
+		    {
+		      "linkId": "PHQ-2",
+		      "text": "Over the last 2 weeks, how often have you been bothered by the following problems?",
+		      "type": "display"
+		    },
+		    {
+		      "linkId": "Question-1",
+		      "type": "choice",
+		      "text": "Little interest or pleasure in doing things?",
+		      "code": [
+		        {
+		          "code": "44250-9",
+		          "system": "http://loinc.org"
+		        }
+		      ],
+		      "answerOption": [
+		        {
+		          "valueCoding": {
+		            "code": "LA6568-5",
+		            "system": "http://loinc.org",
+		            "display": "Not at all"
+		          }
+		        },
+		        {
+		          "valueCoding": {
+		            "code": "LA6569-3",
+		            "system": "http://loinc.org",
+		            "display": "Several days"
+		          }
+		        },
+		        {
+		          "valueCoding": {
+		            "code": "LA6570-1",
+		            "system": "http://loinc.org",
+		            "display": "More than half the days"
+		          }
+		        },
+		        {
+		          "valueCoding": {
+		            "code": "LA6571-9",
+		            "system": "http://loinc.org",
+		            "display": "Nearly every day"
+		          }
+		        }
+		      ]
+		    },
+		    {
+		      "linkId": "Question-2",
+		      "type": "choice",
+		      "text": "Feeling down, depressed, or hopeless?",
+		      "code": [
+		        {
+		          "code": "44255-8",
+		          "system": "http://loinc.org"
+		        }
+		      ],
+		      "answerOption": [
+		        {
+		          "valueCoding": {
+		            "code": "LA6568-5",
+		            "system": "http://loinc.org",
+		            "display": "Not at all"
+		          }
+		        },
+		        {
+		          "valueCoding": {
+		            "code": "LA6569-3",
+		            "system": "http://loinc.org",
+		            "display": "Several days"
+		          }
+		        },
+		        {
+		          "valueCoding": {
+		            "code": "LA6570-1",
+		            "system": "http://loinc.org",
+		            "display": "More than half the days"
+		          }
+		        },
+		        {
+		          "valueCoding": {
+		            "code": "LA6571-9",
+		            "system": "http://loinc.org",
+		            "display": "Nearly every day"
+		          }
+		        }
+		      ]
+		    },
+		    {
+		      "linkId": "Assessment",
+		      "type": "integer",
+		      "readOnly": true,
+		      "text": "Patient health questionnaire 2 item total score",
+		      "code": [
+		        {
+		          "code": "55758-7",
+		          "system": "http://loinc.org",
+		          "display": "Patient health questionnaire 2 item total score"
+		        }
+		      ]
+		    }
+		  ]
+		}
+  ],
+  "_questionnaire": {
+    "extension": [
+      {
+        "url": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-contained-questionnairereference",
+        "valueReference": {
+          "reference": "#contained-questionnaire"
+        }
+      }
+    ]
+  },
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:8e214253-9ad3-479e-82b4-98fc50914c06"
+  },
+  "questionnaire": "http://example.com/PHQ-2",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/example",
+    "display": "Peter James Chalmers"
+  },
+  "encounter": {
+    "reference": "Encounter/example",
+    "display": "Encounter with patient @example"
+  },
+  "authored": "2020-02-15T23:13:35-05:00",
+  "author": {
+    "reference": "Practitioner/example",
+    "display": "Dr. Adam Careful"
+  },
+  "source": {
+    "reference": "Patient/example",
+    "display": "Peter James Chalmers"
+  },
+  "item": [
+    {
+      "linkId": "PHQ-2",
+      "text": "Over the last 2 weeks, how often have you been bothered by the following problems?"
+    },
+    {
+      "linkId": "Question-1",
+      "text": "Little interest or pleasure in doing things?",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Question-2",
+      "text": "Feeling down, depressed, or hopeless?",
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Question-2",
+      "text": "Patient health questionnaire 2 item total score",
+      "answer": [
+        {
+          "valueInteger": 3
+        }
+      ]
+    }
+  ]
+}

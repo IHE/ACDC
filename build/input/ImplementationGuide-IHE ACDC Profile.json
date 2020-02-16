@@ -69,6 +69,13 @@
       },
       {
         "reference": {
+          "reference": "QuestionnaireResponse/ihe-acdc-questionnaireresponse"
+        },
+        "name": "QuestionnaireResponse-ihe-acdc-questionnaireresponse",
+        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/ihe-example-PHQ-2-questionnaire"
         },
         "name": "Questionnaire-ihe-example-PHQ-2-questionnaire",

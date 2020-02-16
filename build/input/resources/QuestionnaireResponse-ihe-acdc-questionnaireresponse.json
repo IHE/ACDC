@@ -1,11 +1,26 @@
 {
   "resourceType": "QuestionnaireResponse",
-  "id": "ACDCExamplePHQ-2QuestionnaireResponse",
+  "id": "ihe-acdc-questionnaireresponse",
   "meta": {
     "profile": [
       "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
     ]
   },
+  "_questionnaire": {
+    "extension": [
+      {
+        "url": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-contained-questionnairereference",
+        "valueReference": {
+          "reference": "#contained-questionnaire"
+        }
+      }
+    ]
+  },
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:8e214253-9ad3-479e-82b4-98fc50914c06"
+  },
+  "questionnaire": "http://example.com/PHQ-2",
   "status": "completed",
   "subject": {
     "reference": "Patient/example",
