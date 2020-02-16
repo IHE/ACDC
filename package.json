@@ -14,8 +14,12 @@
     "Assessment"
   ],
   "language": "en",
-  "author": "Keith W. Boone",
+  "author": "Integrating the Healthcare Enterprise (IHE)",
   "maintainers": [
+    {
+        "name": "IHE Patient Care Coordination",
+        "email": "pcc@ihe.net"
+    },
     {
       "name": "Keith W. Boone",
       "email": "kboone@ainq.com"

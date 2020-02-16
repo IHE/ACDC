@@ -6,8 +6,17 @@
   "name": "IHEACDCImplementationGuide",
   "title": "IHE ACDC Implementation Guide",
   "status": "active",
-  "publisher": "Keith W. Boone",
+  "publisher": "Integrating the Healthcare Enterprise (IHE)",
   "contact": [
+    {
+      "name": "IHE Patient Care Coordination",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "pcc@ihe.net"
+        }
+      ]
+    },
     {
       "name": "Keith W. Boone",
       "telecom": [
@@ -57,6 +66,13 @@
         "name": "IHE ACDC QuestionnaireResponse Profile",
         "description": "Defines constraints and extensions on the QuestionnaireResponse Resource for responses used with the IHE ACDC Profile",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/ACDCExamplePHQ-2Questionnaire"
+        },
+        "name": "Questionnaire-ACDCExamplePHQ-2Questionnaire",
+        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"
       },
       {
         "reference": {
