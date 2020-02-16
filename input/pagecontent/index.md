@@ -44,22 +44,22 @@ PCC X2 Retrieve Artifact transaction.
 #### Executing the Assessment Instrument
 In the second use case, the care provider organization wants to assess a patient using the retrieved or
 identified assessment in their health IT system and be able to collect the results of this assessment
-for a given patient.  This process may be initiated through the user’s EHR, a separate application or
+for a given patient.  This process may be initiated through the users EHR, a separate application or
 device, a patient portal, et cetera.
 
-1.  The provider’s Health IT system can invoke a separate application that can interpret the assessment
+1.  The providers Health IT system can invoke a separate application that can interpret the assessment
     instrument and collect data on the patient, returning it to the health IT solution.
 
 2.  A separate application can be launched either manually by the provider or through an integration
-    method not specified by this guide.  This application will integrate with the provider’s Health IT
+    method not specified by this guide.  This application will integrate with the providers Health IT
 system to determine which assessment is to be performed, for which patient and which encounter.  It will
 then collect the data and return it the EHR attached to the correct patient and encounter.
 
-3.  The provider’s Health IT system can initiate data capture on its own forms, using the data describing
+3.  The providers Health IT system can initiate data capture on its own forms, using the data describing
     the assessment instrument.  To implement this option, the health IT system needs to correctly interpret
     instrument description, collect the data and do what it deems necessary with the data that was collected
     (e.g., create observations or other resources, store a questionnaire response, et cetera).  Because this
-    case can be completely managed by the provider’s Health IT system when the questionnaire items are
+    case can be completely managed by the providers Health IT system when the questionnaire items are
     provided, it is not addressed within this profile.
 
 During the execution of this use case, the software performing the assessment may collect data already known
@@ -121,9 +121,9 @@ The Clinical Knowledge Resource Repository in this profile responds to FHIR-base
 
 1. Given that a Clinical Knowledge Resource Repository provides an assessment instrument that a healthcare provider can use to assess a given condition or health concern, it must provide a mechanism by which that assessment can be performed on a given patient. This can be implemented in one of three ways:
 
-    a. The Clinical Knowledge Resource Repository implements the Questionnaire Item Retrieval option, which enables the healthcare provider’s Health IT system to execute the assessment instrument with the Assessor of its choice, or
+    a. The Clinical Knowledge Resource Repository implements the Questionnaire Item Retrieval option, which enables the healthcare providers Health IT system to execute the assessment instrument with the Assessor of its choice, or
 
-    b. The Clinical Knowledge Resource Repository implements the Assessor option; it must be grouped with an Assessor that the healthcare provider’s Health IT system can use to execute the assessment instrument.
+    b. The Clinical Knowledge Resource Repository implements the Assessor option; it must be grouped with an Assessor that the healthcare providers Health IT system can use to execute the assessment instrument.
 
     c. The Clinical Knowledge Resource Repository implements the EHR Launch Option.  It must also provide the Launch URL for the SMART on FHIR application that implements the accessor capabilities.
 
@@ -143,14 +143,14 @@ The Artifact Consumer in this profile sends FHIR-based queries to the Clinical K
 search for and obtain one or more clinical knowledge artifacts.  Rendering and further processing of these artifacts
 is defined by the Assessor and Assessment Requestor in this profile.
 
-1.  Given that a user with appropriate permissions is operating the provider’s health IT system, when a new assessment
+1.  Given that a user with appropriate permissions is operating the providers health IT system, when a new assessment
 instrument is needed, then the user can locate an appropriate assessment instrument, and configure that health IT system
 to use it to capture an assessment.
 
-2.  A healthcare provider’s health IT system must be able to support assessments from a Clinical Knowledge Resource
+2.  A healthcare providers health IT system must be able to support assessments from a Clinical Knowledge Resource
 Repository that implements the Questionnaire Retrieval Option.
 
-3.  A healthcare provider’s health IT system must be able to support assessments from a Clinical Knowledge Resource
+3.  A healthcare providers health IT system must be able to support assessments from a Clinical Knowledge Resource
 Repository that implements the Assessor Option.
 
 An example CapabilityStatement resource for this actor can be found at [acdc-actor-clinicalknowledgerepository.html](acdc-actor-clinicalknowledgerepository.html)
