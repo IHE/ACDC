@@ -9,14 +9,14 @@ however, the IHE published PDF content for this supplement is considered to be t
 normative content.
 
 This guide is organized into three main sections:
-I. Volume 1: Profile Overview
+1. Volume 1: Profile Overview
     1. This introduction
     2. [Overview](overview.html)
     3. [Actors and Transactions](actorsandtransactions.html)
     4. [Profile Options](profileoptions.html)
     5. [Security Considerations](securityconsiderations.html)
-II. Volume II: [Transactions](transactions.html)
-III. Volume III: [Content Profiles](contentprofiles.html)
+2. Volume II: [Transactions](transactions.html)
+3. Volume III: [Content Profiles](contentprofiles.html)
 
 Click on any of the links above, head on over the [table of contents](toc.html), or
 if you are looking for a specific artifact, check out the [index](artifacts.html).
