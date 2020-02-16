@@ -24,7 +24,7 @@
     {
       "code": "55757-9",
       "system": "http://loinc.org",
-      "display": "Patient Health Questionnaire 2 item (PHQ-2)"
+      "display": "Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
     }
   ],
   "item": [
@@ -124,7 +124,7 @@
         {
           "code": "55758-7",
           "system": "http://loinc.org",
-          "display": "Patient health questionnaire 2 item total score"
+          "display": "Patient health questionnaire 2 item total score [Reported]"
         }
       ],
       "answerOption": [
