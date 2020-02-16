@@ -121,4 +121,4 @@ QuestionnaireResponse resource.
 
 2. The Assessment Requester shall record the import of the QuestionnaireResponse in the audit log.
 
-An example CapabilityStatement resource for this actor can be found at [acdc-actor-assessorrequestor.html](acdc-actor-assessorrequestor.html)
+An example CapabilityStatement resource for this actor can be found at [acdc-actor-assessmentrequestor.html](acdc-actor-assessmentrequestor.html)

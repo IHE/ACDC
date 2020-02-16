@@ -1,5 +1,5 @@
 {
-  "package-id": "IHE ACDC Profile",
+  "package-id": "IHE-ACDC-Profile",
   "title": "IHE ACDC Implementation Guide",
   "canonical": "http://ihe.net/fhir/ACDC",
   "introduction": "The FHIR IG materials for the IHE AC/DC Profile",

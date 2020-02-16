@@ -13,7 +13,8 @@
     }
   ],
   "url": "http://example.com/PHQ-2",
-  "name": "PHQ-2",
+  "name": "PHQ2",
+  "status": "active",
   "title": "Patient Health Questionnaire-2",
   "date": "2020-02-15",
   "publisher": "Integrating the Healthcare Enterprise (IHE)",
@@ -125,6 +126,15 @@
           "system": "http://loinc.org",
           "display": "Patient health questionnaire 2 item total score"
         }
+      ],
+      "answerOption": [
+          { "valueInteger": 0 },
+          { "valueInteger": 1 },
+          { "valueInteger": 2 },
+          { "valueInteger": 3 },
+          { "valueInteger": 4 },
+          { "valueInteger": 5 },
+          { "valueInteger": 6 }
       ]
     }
   ]
