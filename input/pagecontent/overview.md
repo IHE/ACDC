@@ -30,8 +30,8 @@ address a specified condition or health concern.  Their goal is to identify inst
 instruments which could be used to capture information essential to management of the care of patients having
 that condition.  Their EHR will be able to perform the assessment once it has been acquired.
 
-This use case is supported by the IHE PCC X1 Query Artifact transaction](actorsandtransactions.html#pcc-x1), and the [IHE
-PCC X2 Retrieve Artifact transaction](actorsandtransactions.html#pcc-x2).
+This use case is supported by the [IHE PCC X1 Query Artifact transaction](actorsandtransactions.html#pcc-x1), and the
+[IHE PCC X2 Retrieve Artifact transaction](actorsandtransactions.html#pcc-x2).
 
 ##### Executing the Assessment Instrument
 In the second use case, the care provider organization wants to assess a patient using the retrieved or

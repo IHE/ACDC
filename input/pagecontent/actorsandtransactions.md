@@ -27,19 +27,22 @@ These actors participate in the following transactions:
     consumer to determine if it wants to know more about the assessment instrument.
 
     The returned result would list the metadata associated with the various Questionnaire resources available
-    but need not contain complete data on items in the instrument.
+    but need not contain complete data on items in the instrument.  The returned Questionnaire resources conform 
+    to the [ACDC Questionaire FHIR Resource profile](ihe-acdc-questionnaire.html).
 
 <a name='pcc-x2'> </a> Request Artifact [PCC-X2]
 :   The Request Artifact transaction uses RESTful API to requests the complete details of an Assessment Instrument in
-    order to implement it for evaluation or production use.
+    order to implement it for evaluation or production use. The returned Questionnaire conforms to 
+    the [ACDC Questionaire FHIR Resource profile](ihe-acdc-questionnaire.html).
 
 
 <a name='pcc-x3'> </a> Request Assessment [PCC-X3]
-:   The Request Assessment transaction initiates an assessment.
-
+:   The Request Assessment transaction initiates an assessment described in a Questionnaire conforming to the 
+    [ACDC Questionaire FHIR Resource profile](ihe-acdc-questionnaire.html). 
 
 <a name='pcc-x4'> </a> Report Assessment [PCC-X4]
-:   The Report Assessment transaction reports on the results of an assessment via a restful API.
+:   The Report Assessment transaction reports on the results of an assessment via a restful API. 
+ The returned QuestionnaireResponse conforms to the [ACDC QuestionaireResponse FHIR Resource profile](ihe-acdc-questionnaireresource.html).
 
 The figure below depicts how these actors interact with each other through the IHE transactions
 described above.
