@@ -1,6 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "acdc-actor-clinicalknowledgerepository",
+  "description": "This CapabilityStatement resource demonstrates how a system documents conformance\nas a Clinical Knowledge Repository Actor in the ACDC Profile.",
   "rest": [
     {
       "mode": "server",

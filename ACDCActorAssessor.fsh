@@ -2,6 +2,11 @@ Instance:       ACDCActorAssessor
 InstanceOf:     CapabilityStatement
 Title:          "IHE ACDC Assessor Actor Capability Statement"
 * id = "acdc-actor-assessor"
+* description = """
+This CapabilityStatement resource demonstrates how a system documents conformance
+as an Assessor Actor in the ACDC Profile.
+"""
+
 * rest[0].mode = #client
 * rest[0].security.cors = true
 * rest[0].security.service = #SMART-on-FHIR

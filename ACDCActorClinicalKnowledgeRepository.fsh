@@ -2,6 +2,10 @@ Instance:       ACDCActorClinicalKnowledgeRepository
 InstanceOf:     CapabilityStatement
 Title:          "IHE ACDC Clinical Knowledge Repository Actor Capability Statement"
 * id = "acdc-actor-clinicalknowledgerepository"
+* description = """
+This CapabilityStatement resource demonstrates how a system documents conformance
+as a Clinical Knowledge Repository Actor in the ACDC Profile.
+"""
 * rest[0].mode = #server
 * rest[0].resource.type = #Questionnaire
 * rest[0].resource.profile =  "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"

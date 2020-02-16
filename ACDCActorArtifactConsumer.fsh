@@ -2,6 +2,11 @@ Instance:       ACDCActorArtifactConsumer
 InstanceOf:     CapabilityStatement
 Title:          "IHE ACDC Artifact Consumer Actor Capability Statement"
 * id = "acdc-actor-artifactconsumer"
+* description = """
+This CapabilityStatement resource demonstrates how a system documents conformance
+as an Artifact Consumer Actor in the ACDC Profile.
+"""
+
 * rest[0].mode = #client
 * rest[0].resource.type = #Questionnaire
 * rest[0].resource.profile =  "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"

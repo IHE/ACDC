@@ -1,6 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "acdc-actor-assessor",
+  "description": "This CapabilityStatement resource demonstrates how a system documents conformance\nas an Assessor Actor in the ACDC Profile.",
   "rest": [
     {
       "mode": "client",

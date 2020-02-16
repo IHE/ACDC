@@ -2,6 +2,11 @@ Instance:       ACDCActorAssessmentRequestor
 InstanceOf:     CapabilityStatement
 Title:          "IHE ACDC Assessment Requestor Actor Capability Statement"
 * id = "acdc-actor-assessmentrequestor"
+* description = """
+This CapabilityStatement resource demonstrates how a system documents conformance
+as an Assessment Requestor Actor in the ACDC Profile.
+"""
+
 * rest[0].mode = #server
 //* rest.security.extension[http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris].extension[token].valueUri = "https://example.com/auth/token"
 //* rest.security.extension[http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris].extension[authorize].valueUri = "https://example.com/auth/authorize"
