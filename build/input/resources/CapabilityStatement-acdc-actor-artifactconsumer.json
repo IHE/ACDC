@@ -12,11 +12,12 @@
           "documentation": "The Artifact Consumer Actor initiates Questionnaire read and search interactions",
           "interaction": [
             {
-              "code": "search",
-              "documentation": "This interaction corresponds to the IHE PCC-X2 transaction."
+              "code": "search-type",
+              "documentation": "This interaction corresponds to the IHE PCC-X1 transaction."
             },
             {
-              "code": "read"
+              "code": "read",
+              "documentation": "This interaction corresponds to the IHE PCC-X2 transaction."
             }
           ]
         }

@@ -26,7 +26,7 @@
           "interaction": [
             {
               "code": "create",
-              "documentation": "This interaction corresponds to the IHE PCC-X4 transaction.\nWhen the QuestionnaireResponse is created, it may include a contained copy of the Questionnaire\nresource that was used to produce the response.  This has proven to be helpful to facilite consumption\nas it avoids additional retrievals of the questionnaire resource by the AssessmentRequestor"
+              "documentation": "This interaction corresponds to the IHE PCC-X4 transaction.\nWhen the QuestionnaireResponse is created, it may include a contained copy of the Questionnaire\nresource that was used to produce the response.  This has proven to be helpful to facilite consumption\nas it avoids additional retrievals of the questionnaire resource by the AssessmentRequester"
             }
           ]
         }
