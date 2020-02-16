@@ -12,11 +12,12 @@
           "documentation": "The Clinical Knowledge Repository Actor responds to Questionnaire read and search interactions",
           "interaction": [
             {
-              "code": "search",
+              "code": "search-type",
               "documentation": "This interaction corresponds to the IHE PCC-X2 transaction."
             },
             {
-              "code": "read"
+              "code": "read",
+              "documentation": "This interaction corresponds to the IHE PCC-X1 transaction."
             }
           ],
           "searchParam": [

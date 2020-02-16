@@ -10,10 +10,10 @@ as a Clinical Knowledge Repository Actor in the ACDC Profile.
 * rest[0].resource.type = #Questionnaire
 * rest[0].resource.profile =  "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"
 * rest[0].resource.documentation = "The Clinical Knowledge Repository Actor responds to Questionnaire read and search interactions"
-* rest[0].resource.interaction[0].code = #search
-* rest[0].resource.interaction.documentation = "This interaction corresponds to the IHE PCC-X1 transaction."
+* rest[0].resource.interaction[0].code = #search-type
+* rest[0].resource.interaction[0].documentation = "This interaction corresponds to the IHE PCC-X1 transaction."
 * rest[0].resource.interaction[1].code = #read
-* rest[0].resource.interaction.documentation = "This interaction corresponds to the IHE PCC-X2 transaction."
+* rest[0].resource.interaction[1].documentation = "This interaction corresponds to the IHE PCC-X2 transaction."
 * rest[0].resource.searchParam[0].name = "_summary"
 * rest[0].resource.searchParam[0].type = #token
 * rest[0].resource.searchParam[0].documentation = """
