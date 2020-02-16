@@ -123,7 +123,7 @@
 		      "linkId": "Assessment",
 		      "type": "integer",
 		      "readOnly": true,
-		      "text": "Patient health questionnaire 2 item total score [Reported]",
+		      "text": "Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]",
 		      "code": [
 		        {
 		          "code": "55758-7",
