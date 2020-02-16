@@ -1,6 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "id": "ACDCExamplePHQ-2Questionnaire",
+  "id": "ihe-example-PHQ-2-questionnaire",
   "meta": {
     "profile": [
       "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"
