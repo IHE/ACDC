@@ -23,7 +23,7 @@ specific information about patients that contain elements that can be obtained f
 are shown in the figure below.
 
 ** Quality Related Assessments **
-![Quality Related Assessments](../assets/images/QualityRelatedAssessments.png "Quality Related Assessments")
+![Quality Related Assessments](QualityRelatedAssessments.png "Quality Related Assessments")
 
 Many of these instruments can be implemented using technology, as they are simple forms or questionnaires.
 Some data in these instruments might be automatically populated by the EHR system.  However, because there
@@ -114,7 +114,7 @@ The figure below depicts how these actors interact with each other through the I
 described above.
 
 **Figure 2: Actor and Transaction Diagram for the ACDC Profile**
-![IHE Actor and Transaction Diagram for the ACDC Profile](../assets/images/ActorsAndTransactions.png "IHE Actor and Transaction Diagram for the ACDC Profile")
+![IHE Actor and Transaction Diagram for the ACDC Profile](ActorsAndTransactions.png "IHE Actor and Transaction Diagram for the ACDC Profile")
 
 #### Clinical Knowledge Resource Repository
 The Clinical Knowledge Resource Repository in this profile responds to FHIR-based queries for one or more clinical knowledge artifacts.
