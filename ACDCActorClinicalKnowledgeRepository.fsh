@@ -25,7 +25,7 @@ _summary=true to restrict access to the full questionnaire content.
 * rest[0].resource.searchParam[1].type = #token
 * rest[0].resource.searchParam[1].documentation = """
 This search parameter allows assessment instruments to be located by codes.
-It must be documented in the capability stateement
+It must be documented in the capability statement
 """
 
 * rest[0].resource.searchParam[1].name = "context"
@@ -42,28 +42,28 @@ and documented in the capability statement.
 * rest[0].resource.searchParam[2].type = #date
 * rest[0].resource.searchParam[2].documentation = """
 This search parameter allows assessment instruments to be located based upon their publication date.
-It must be documented in the capability stateement
+It must be documented in the capability statement
 """
 
 * rest[0].resource.searchParam[3].name = "description"
 * rest[0].resource.searchParam[3].type = #string
 * rest[0].resource.searchParam[3].documentation = """
 This search parameter allows assessment instruments to be located based upon the text in their description.
-It must be documented in the capability stateement
+It must be documented in the capability statement
 """
 
 * rest[0].resource.searchParam[4].name = "name"
 * rest[0].resource.searchParam[4].type = #string
 * rest[0].resource.searchParam[4].documentation = """
 This search parameter allows assessment instruments to be located based upon the text in their name.
-It must be documented in the capability stateement
+It must be documented in the capability statement
 """
 
 * rest[0].resource.searchParam[5].name = "publisher"
 * rest[0].resource.searchParam[5].type = #string
 * rest[0].resource.searchParam[5].documentation = """
 This search parameter allows assessment instruments to be located based upon the name of the publisher.
-It must be documented in the capability stateement
+It must be documented in the capability statement
 """
 
 * rest[0].resource.searchParam[5].name = "status"
@@ -71,5 +71,5 @@ It must be documented in the capability stateement
 * rest[0].resource.searchParam[5].documentation = """
 This search parameter allows assessment instruments to be located based upon
 their status (i.e., draft | active | retired | unknown).
-It must be documented in the capability stateement
+It must be documented in the capability statement
 """
