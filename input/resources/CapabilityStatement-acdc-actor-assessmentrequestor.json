@@ -21,13 +21,13 @@
         {
           "type": "QuestionnaireResponse",
           "profile": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse",
-          "documentation": "The AssessmentRequestor Actor responds to QuestionnaireResponse create interactions."
-        }
-      ],
-      "interaction": [
-        {
-          "code": "create",
-          "documentation": "When the QuestionnaireResponse is created, it may include a contained copy of the Questionnaire\nresource that was used to produce the response.  This has proven to be helpful to facilite consumption\nas it avoids additional retrievals of the questionnaire resource by the AssessmentRequestor"
+          "documentation": "The AssessmentRequestor Actor responds to QuestionnaireResponse create interactions.",
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "When the QuestionnaireResponse is created, it may include a contained copy of the Questionnaire\nresource that was used to produce the response.  This has proven to be helpful to facilite consumption\nas it avoids additional retrievals of the questionnaire resource by the AssessmentRequestor"
+            }
+          ]
         }
       ]
     }

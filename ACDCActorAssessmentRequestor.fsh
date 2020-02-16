@@ -15,8 +15,8 @@ endpoints using the oauth-uris extension described at [http://www.hl7.org/fhir/s
 * rest[0].resource.type = #QuestionnaireResponse
 * rest[0].resource.profile =  "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
 * rest[0].resource.documentation = "The AssessmentRequestor Actor responds to QuestionnaireResponse create interactions."
-* rest[0].interaction.code = #create
-* rest[0].interaction.documentation = """
+* rest[0].resource.interaction.code = #create
+* rest[0].resource.interaction.documentation = """
 When the QuestionnaireResponse is created, it may include a contained copy of the Questionnaire
 resource that was used to produce the response.  This has proven to be helpful to facilite consumption
 as it avoids additional retrievals of the questionnaire resource by the AssessmentRequestor"""
