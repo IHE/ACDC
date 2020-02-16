@@ -11,7 +11,7 @@ Title:          "IHE ACDC Example Questionnaire for PHQ-2"
 * purpose = "The PHQ-2 is the ultra-brief depression measure (using first 2 items of PHQ-9) and ranges from 0-6. Most who use the short PHQ-2 use it for screening and not for monitoring depression"
 * description = "Implements the PHQ-2 Depression Screening Assessment Instrument as a FHIR Questionnaire Resource"
 * code = http://loinc.org#55757-9
-* code.display = "Patient Health Questionnaire 2 item (PHQ-2)"
+* code.display = "Patient Health Questionnaire 2 item (PHQ-2) [Reported]"
 * item[0].linkId = "PHQ-2"
 * item[0].text = "Over the last 2 weeks, how often have you been bothered by the following problems?"
 * item[0].type = #display
@@ -42,7 +42,7 @@ Title:          "IHE ACDC Example Questionnaire for PHQ-2"
 * item[3].linkId = "Assessment"
 * item[3].type = #integer
 * item[3].readOnly = true
-* item[3].text = "Patient health questionnaire 2 item total score"
+* item[3].text = "Patient health questionnaire 2 item total score [Reported]"
 * item[3].code = http://loinc.org#55758-7
 * item[3].code.display = "Patient health questionnaire 2 item total score"
 
