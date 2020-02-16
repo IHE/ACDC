@@ -22,88 +22,95 @@
   "code": [
     {
       "code": "55757-9",
-      "system": "http://loinc.org"
+      "system": "http://loinc.org",
+      "display": "Patient Health Questionnaire 2 item (PHQ-2)"
     }
   ],
   "item": [
     {
-      "text": "Over the last 2 weeks, how often have you been bothered by the following problems?",
       "linkId": "PHQ-2",
-      "type": "group",
-      "item": [
+      "text": "Over the last 2 weeks, how often have you been bothered by the following problems?",
+      "type": "display"
+    },
+    {
+      "linkId": "Question-1",
+      "type": "choice",
+      "text": "Little interest or pleasure in doing things?",
+      "code": [
         {
-          "type": "choice",
-          "text": "Little interest or pleasure in doing things?",
-          "code": [
-            {
-              "code": "44250-9",
-              "system": "http://loinc.org"
-            }
-          ],
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "LA6568-5",
-                "system": "http://loinc.org",
-                "display": "Not at all"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "LA6569-3",
-                "system": "http://loinc.org"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "LA6570-1",
-                "system": "http://loinc.org"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "LA6571-9",
-                "system": "http://loinc.org"
-              }
-            }
-          ]
+          "code": "44250-9",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all"
+          }
         },
         {
-          "linkId": "Question-2",
-          "type": "choice",
-          "text": "Feeling down, depressed, or hopeless?",
-          "code": [
-            {
-              "code": "44255-8",
-              "system": "http://loinc.org"
-            }
-          ],
-          "answerOption": [
-            {
-              "valueCoding": {
-                "code": "LA6568-5",
-                "system": "http://loinc.org"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "LA6569-3",
-                "system": "http://loinc.org"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "LA6570-1",
-                "system": "http://loinc.org"
-              }
-            },
-            {
-              "valueCoding": {
-                "code": "LA6571-9",
-                "system": "http://loinc.org"
-              }
-            }
-          ]
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "Question-2",
+      "type": "choice",
+      "text": "Feeling down, depressed, or hopeless?",
+      "code": [
+        {
+          "code": "44255-8",
+          "system": "http://loinc.org"
+        }
+      ],
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days"
+          }
+        },
+        {
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day"
+          }
         }
       ]
     },
@@ -115,7 +122,8 @@
       "code": [
         {
           "code": "55758-7",
-          "system": "http://loinc.org"
+          "system": "http://loinc.org",
+          "display": "Patient health questionnaire 2 item total score"
         }
       ]
     }
