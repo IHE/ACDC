@@ -61,14 +61,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ihe-acdc-questionnaireresponse"
-        },
-        "name": "IHE ACDC QuestionnaireResponse Profile",
-        "description": "Defines constraints and extensions on the QuestionnaireResponse Resource for responses used with the IHE ACDC Profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "QuestionnaireResponse/ihe-acdc-questionnaireresponse"
         },
         "name": "QuestionnaireResponse-ihe-acdc-questionnaireresponse",
