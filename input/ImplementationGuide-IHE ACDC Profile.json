@@ -194,14 +194,20 @@
 							"nameUrl" : "securityconsiderations.html",
 							"title" : "IHE ACDC Security Considerations",
 							"generation" : "markdown"
-						 },
-
-						{
-							"nameUrl" : "contentprofiles.html",
-							"title" : "IHE ACDC Content Profiles",
-							"generation" : "markdown"
 						 }
 					 ]
+				 },
+
+				{
+					"nameUrl" : "transactions.html",
+					"title" : "IHE ACDC Content Profiles",
+					"generation" : "markdown"
+				 },
+
+				{
+					"nameUrl" : "contentprofiles.html",
+					"title" : "IHE ACDC Content Profiles",
+					"generation" : "markdown"
 				 }
 			 ]
 		 },
