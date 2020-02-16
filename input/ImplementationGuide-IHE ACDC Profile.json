@@ -61,17 +61,17 @@
       },
       {
         "reference": {
-          "reference": "QuestionnaireResponse/ihe-acdc-questionnaireresponse"
+          "reference": "Questionnaire/ihe-acdc-example-PHQ-2-questionnaire"
         },
-        "name": "QuestionnaireResponse-ihe-acdc-questionnaireresponse",
-        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
+        "name": "Questionnaire-ihe-acdc-example-PHQ-2-questionnaire",
+        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"
       },
       {
         "reference": {
-          "reference": "Questionnaire/ihe-example-PHQ-2-questionnaire"
+          "reference": "QuestionnaireResponse/ihe-acdc-example-PHQ-2-questionnaireresponse"
         },
-        "name": "Questionnaire-ihe-example-PHQ-2-questionnaire",
-        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"
+        "name": "QuestionnaireResponse-ihe-acdc-example-PHQ-2-questionnaireresponse",
+        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
       },
       {
         "reference": {

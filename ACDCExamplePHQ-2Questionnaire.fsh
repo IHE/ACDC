@@ -1,7 +1,7 @@
 Instance:       ACDCExamplePHQ-2Questionnaire
 InstanceOf:     ACDCQuestionnaire
 Title:          "IHE ACDC Example Questionnaire for PHQ-2"
-* id = "ihe-example-PHQ-2-questionnaire"
+* id = "ihe-acdc-example-PHQ-2-questionnaire"
 * extension[http://ihe.net/fhir/ACDC/StructureDefinition/questionnaire-launchurl].valueUri = "https://example.com/launch/PHQ-2"
 * url = "http://example.com/PHQ-2"
 * name = "PHQ-2"

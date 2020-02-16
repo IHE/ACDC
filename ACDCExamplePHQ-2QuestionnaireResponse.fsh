@@ -1,7 +1,7 @@
 Instance:       ACDCExamplePHQ-2QuestionnaireResponse
 InstanceOf:     ACDCQuestionnaireResponse
 Title:          "IHE ACDC Example Questionnaire for PHQ-2"
-* id = "ihe-acdc-questionnaireresponse"
+* id = "ihe-acdc-example-PHQ-2-questionnaireresponse"
 * identifier.system = "urn:ietf:rfc:3986"
 * identifier.value = "urn:uuid:8e214253-9ad3-479e-82b4-98fc50914c06"
 * questionnaire = "http://example.com/PHQ-2"
