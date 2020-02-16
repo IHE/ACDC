@@ -1,10 +1,14 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "acdc-actor-clinicalknowledgerepository",
-  "description": "This CapabilityStatement resource demonstrates how a system documents conformance\nas a Clinical Knowledge Repository Actor in the ACDC Profile.",
+  "name": "ACDC_ClinicalKnowledgeRepository",
   "kind": "requirements",
+  "format": [
+    "xml",
+    "json"
+  ],
   "fhirVersion": "4.0.1",
-  "format": ["xml", "json"],
+  "description": "This CapabilityStatement resource demonstrates how a system documents conformance\nas a Clinical Knowledge Repository Actor in the ACDC Profile.",
   "rest": [
     {
       "mode": "server",
@@ -16,11 +20,11 @@
           "interaction": [
             {
               "code": "search-type",
-              "documentation": "This interaction corresponds to the IHE PCC-X2 transaction."
+              "documentation": "This interaction corresponds to the IHE PCC-X1 transaction."
             },
             {
               "code": "read",
-              "documentation": "This interaction corresponds to the IHE PCC-X1 transaction."
+              "documentation": "This interaction corresponds to the IHE PCC-X2 transaction."
             }
           ],
           "searchParam": [
@@ -37,22 +41,22 @@
             {
               "name": "date",
               "type": "date",
-              "documentation": "This search parameter allows assessment instruments to be located based upon their publication date.\nIt must be documented in the capability stateement"
+              "documentation": "This search parameter allows assessment instruments to be located based upon their publication date.\nIt must be documented in the capability statement"
             },
             {
               "name": "description",
               "type": "string",
-              "documentation": "This search parameter allows assessment instruments to be located based upon the text in their description.\nIt must be documented in the capability stateement"
+              "documentation": "This search parameter allows assessment instruments to be located based upon the text in their description.\nIt must be documented in the capability statement"
             },
             {
               "name": "name",
               "type": "string",
-              "documentation": "This search parameter allows assessment instruments to be located based upon the text in their name.\nIt must be documented in the capability stateement"
+              "documentation": "This search parameter allows assessment instruments to be located based upon the text in their name.\nIt must be documented in the capability statement"
             },
             {
               "name": "status",
               "type": "token",
-              "documentation": "This search parameter allows assessment instruments to be located based upon\ntheir status (i.e., draft | active | retired | unknown).\nIt must be documented in the capability stateement"
+              "documentation": "This search parameter allows assessment instruments to be located based upon\ntheir status (i.e., draft | active | retired | unknown).\nIt must be documented in the capability statement"
             }
           ]
         }

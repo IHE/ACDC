@@ -3,6 +3,10 @@ InstanceOf:     CapabilityStatement
 Title:          "IHE ACDC Assessment Requester Actor Capability Statement"
 * id = "acdc-actor-assessmentrequestor"
 * name = "ACDC_AssessmentRequester"
+* kind = #requirements
+* format[0] = #xml
+* format[1] = #json
+* fhirVersion = #4.0.1
 * description = """
 This CapabilityStatement resource demonstrates how a system documents conformance
 as an Assessment Requester Actor in the ACDC Profile.

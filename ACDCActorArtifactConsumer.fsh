@@ -3,6 +3,10 @@ InstanceOf:     CapabilityStatement
 Title:          "IHE ACDC Artifact Consumer Actor Capability Statement"
 * id = "acdc-actor-artifactconsumer"
 * name = "ACDC_ArtifactConsumer"
+* kind = #requirements
+* format[0] = #xml
+* format[1] = #json
+* fhirVersion = #4.0.1
 * description = """
 This CapabilityStatement resource demonstrates how a system documents conformance
 as an Artifact Consumer Actor in the ACDC Profile.

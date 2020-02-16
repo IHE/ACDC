@@ -3,6 +3,10 @@ InstanceOf:     CapabilityStatement
 Title:          "IHE ACDC Clinical Knowledge Repository Actor Capability Statement"
 * id = "acdc-actor-clinicalknowledgerepository"
 * name = "ACDC_ClinicalKnowledgeRepository"
+* kind = #requirements
+* format[0] = #xml
+* format[1] = #json
+* fhirVersion = #4.0.1
 * description = """
 This CapabilityStatement resource demonstrates how a system documents conformance
 as a Clinical Knowledge Repository Actor in the ACDC Profile.

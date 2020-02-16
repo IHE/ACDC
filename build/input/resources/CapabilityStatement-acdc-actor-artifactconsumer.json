@@ -1,6 +1,13 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "acdc-actor-artifactconsumer",
+  "name": "ACDC_ArtifactConsumer",
+  "kind": "requirements",
+  "format": [
+    "xml",
+    "json"
+  ],
+  "fhirVersion": "4.0.1",
   "description": "This CapabilityStatement resource demonstrates how a system documents conformance\nas an Artifact Consumer Actor in the ACDC Profile.",
   "rest": [
     {

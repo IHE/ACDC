@@ -1,6 +1,13 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "acdc-actor-assessmentrequestor",
+  "name": "ACDC_AssessmentRequester",
+  "kind": "requirements",
+  "format": [
+    "xml",
+    "json"
+  ],
+  "fhirVersion": "4.0.1",
   "description": "This CapabilityStatement resource demonstrates how a system documents conformance\nas an Assessment Requester Actor in the ACDC Profile.",
   "rest": [
     {

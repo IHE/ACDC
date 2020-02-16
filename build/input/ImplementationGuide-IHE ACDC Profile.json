@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "IHE-ACDC-Profile",
-  "url": "http://ihe.net/fhir/ACDC/ImplementationGuide/IHE-ACDC-Profile",
+  "id": "IHE ACDC Profile",
+  "url": "http://ihe.net/fhir/ACDC/ImplementationGuide/IHE ACDC Profile",
   "version": "0.1.0",
   "name": "IHEACDCImplementationGuide",
   "title": "IHE ACDC Implementation Guide",
@@ -13,7 +13,7 @@
       "telecom": [
         {
           "system": "email",
-          "value": "pcc@ihe.net"
+          "value": "https://www.ihe.net/ihe_domains/patient_care_coordination/"
         }
       ]
     },
