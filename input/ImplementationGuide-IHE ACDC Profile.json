@@ -170,7 +170,27 @@
 					"nameUrl" : "index.html",
 					"title" : "IHE ACDC Implementation Guide",
 					"generation" : "markdown"
-				 }
+				 },
+				 {  "nameUrl" : "overview.html",
+				    "title" : "IHE ACDC Overview",
+				    "generation": "markdown"
+				 },
+                 {  "nameUrl" : "actorsandtransactions.html",
+                    "title" : "IHE ACDC Actors and Transactions",
+                    "generation": "markdown"
+                 },
+                 {  "nameUrl" : "profileoptions.html",
+                    "title" : "IHE ACDC Profile Options",
+                    "generation": "markdown"
+                 },
+                 {  "nameUrl" : "securityconsiderations.html",
+                    "title" : "IHE ACDC Security Considerations",
+                    "generation": "markdown"
+                 },
+                 {  "nameUrl" : "contentprofiles.html",
+                    "title" : "IHE ACDC Content Profiles",
+                    "generation": "markdown"
+                 }
 			 ]
 		 },
 
