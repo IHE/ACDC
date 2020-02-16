@@ -133,7 +133,7 @@
 		    }
 		  ]
 		}
-  ]
+  ],
   "meta": {
     "profile": [
       "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
