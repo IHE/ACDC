@@ -1,7 +1,7 @@
 {
 	"resourceType" : "ImplementationGuide",
 	"id" : "IHE ACDC Profile",
-	"url" : "http://ihe.net/fhir/ACDC/ImplementationGuide/IHE ACDC Profile",
+	"url" : "http://ihe.net/fhir/ACDC/ImplementationGuide/IHE-ACDC-Profile",
 	"version" : "0.1.0",
 	"name" : "IHEACDCImplementationGuide",
 	"title" : "IHE ACDC Implementation Guide",
@@ -33,7 +33,7 @@
 	 ],
 
 	"description" : "The FHIR IG materials for the IHE AC/DC Profile",
-	"packageId" : "IHE ACDC Profile",
+	"packageId" : "IHE-ACDC-Profile",
 	"license" : "CC0-1.0",
 	"fhirVersion" :
 	[

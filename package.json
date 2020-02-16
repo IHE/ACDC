@@ -18,7 +18,7 @@
   "maintainers": [
     {
         "name": "IHE Patient Care Coordination",
-        "email": "pcc@ihe.net"
+        "email": "https://www.ihe.net/ihe_domains/patient_care_coordination/"
     },
     {
       "name": "Keith W. Boone",
