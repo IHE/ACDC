@@ -162,13 +162,13 @@ encounter, author and questionnaire resources.  The subject, encounter, and auth
 current context of the Assessor actor.  The questionnaire resource should be represented by the canonical url which
 uniquely identifies the assessment instrument.
 
-An example CapabilityStatement resource for this actor can be found at [acdc-actor-assessor.html](acdc-actor-clinicalknowledgerepository.html)
+An example CapabilityStatement resource for this actor can be found at [acdc-actor-assessor.html](acdc-actor-assessor.html)
 
 #### Assessment Requestor
 The Assessment Requestor in this profile requests an assessment of an assessor and processes results returned in a
 QuestionnaireResponse resource.  It must accept an assessment as a QuestionnaireResponse resource from the Assessor actor.
 
-An example CapabilityStatement resource for this actor can be found at [acdc-actor-assessorrequestor.html](acdc-actor-clinicalknowledgerepository.html)
+An example CapabilityStatement resource for this actor can be found at [acdc-actor-assessorrequestor.html](acdc-actor-assessorrequestor.html)
 
 ### Profile Options
 This profile provides three options:
