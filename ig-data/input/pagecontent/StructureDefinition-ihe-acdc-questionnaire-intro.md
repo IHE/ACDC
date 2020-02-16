@@ -1,4 +1,3 @@
-#a
 ## Introduction
 The IHE ACDC Questionnaire Profile defines the constraints on Questionnaire resources returned by the
 PCC-X2 transaction, and referenced by the QuestionnaireResponse resource used in the PCC-X4 transaction.
@@ -9,7 +8,7 @@ patient.
 At a minimum, Questionnaire resources that comply with this provide must provide:
 
 extension\[@url="http://ihe.net/fhir/ACDC/StructureDefinition/questionnaire-launchurl"]
-: The EHR launch URL for the questionnaire.  At least one of these elements must be present when no items
+: The EHR launch URL for the questionnaire.  This is the URL to use for the SMART on FHIR [EHR Launch](http://www.hl7.org/fhir/smart-app-launch/#ehr-launch-sequence) flow. At least one of these elements must be present when no items
 are provided in the questionnaire.  It enables limited content to be returned from a questionnaire to enable others to
 explore assessment instrument content without fully exposing the content of the questionnaire.
 
