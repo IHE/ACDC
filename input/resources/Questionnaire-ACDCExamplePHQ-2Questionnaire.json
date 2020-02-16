@@ -44,7 +44,8 @@
             {
               "valueCoding": {
                 "code": "LA6568-5",
-                "system": "http://loinc.org"
+                "system": "http://loinc.org",
+                "display": "Not at all"
               }
             },
             {
