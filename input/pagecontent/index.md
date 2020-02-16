@@ -8,13 +8,15 @@ this IHE profile.  This guide includes content from the IHE ACDC Profile Supplem
 however, the IHE published PDF content for this supplement is considered to be the
 normative content.
 
-This guide is organized into the following sections:
-1. This introduction
-2. [Overview](overview.html)
-3. [Actors and Transactions](actorsandtransactions.html)
-4. [Profile Options](profileoptions.html)
-5. [Security Considerations](securityconsiderations.html)
-6. [Content Profiles](contentprofiles.html)
+This guide is organized into three main sections:
+I. Volume 1: Profile Overview
+    1. This introduction
+    2. [Overview](overview.html)
+    3. [Actors and Transactions](actorsandtransactions.html)
+    4. [Profile Options](profileoptions.html)
+    5. [Security Considerations](securityconsiderations.html)
+II. Volume II: [Transactions](transactions.html)
+III. Volume III: [Content Profiles](contentprofiles.html)
 
-Click on any of the links abobe, head on over the [table of contents](toc.html), or
+Click on any of the links above, head on over the [table of contents](toc.html), or
 if you are looking for a specific artifact, check out the [index](artifacts.html).
