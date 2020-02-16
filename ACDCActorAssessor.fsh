@@ -2,6 +2,7 @@ Instance:       ACDCActorAssessor
 InstanceOf:     CapabilityStatement
 Title:          "IHE ACDC Assessor Actor Capability Statement"
 * id = "acdc-actor-assessor"
+* name = "ACDC_Assessor"
 * description = """
 This CapabilityStatement resource demonstrates how a system documents conformance
 as an Assessor Actor in the ACDC Profile.
