@@ -69,6 +69,34 @@
       },
       {
         "reference": {
+          "reference": "CapabilityStatement/acdc-actor-artifactconsumer"
+        },
+        "name": "CapabilityStatement-acdc-actor-artifactconsumer",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/acdc-actor-assessmentrequestor"
+        },
+        "name": "CapabilityStatement-acdc-actor-assessmentrequestor",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/acdc-actor-assessor"
+        },
+        "name": "CapabilityStatement-acdc-actor-assessor",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/acdc-actor-clinicalknowledgerepository"
+        },
+        "name": "CapabilityStatement-acdc-actor-clinicalknowledgerepository",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "Questionnaire/ihe-acdc-example-PHQ-2-questionnaire"
         },
         "name": "Questionnaire-ihe-acdc-example-PHQ-2-questionnaire",
