@@ -22,7 +22,8 @@ In the US, more than a half dozen quality improvement or recognition programs re
 specific information about patients that contain elements that can be obtained from health assessments . These
 are shown in the figure below.
 
-** Quality Related Assessments **
+**Quality Related Assessments**
+
 ![Quality Related Assessments](QualityRelatedAssessments.png "Quality Related Assessments")
 
 Many of these instruments can be implemented using technology, as they are simple forms or questionnaires.
@@ -114,6 +115,7 @@ The figure below depicts how these actors interact with each other through the I
 described above.
 
 **Figure 2: Actor and Transaction Diagram for the ACDC Profile**
+
 ![IHE Actor and Transaction Diagram for the ACDC Profile](ActorsAndTransactions.png "IHE Actor and Transaction Diagram for the ACDC Profile")
 
 #### Clinical Knowledge Resource Repository
