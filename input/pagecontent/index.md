@@ -74,31 +74,41 @@ PCC X4 Report Assessment transaction.
 The IHE AC/DC Profile describes four actors, defined below:
 
 Clinical Knowledge Resource Repository
-: A Clinical Knowledge Resource Repository stores documents artifacts and metadata providing regarding computable clinical knowledge and enables access to that information to requesters on demand.
+: A Clinical Knowledge Resource Repository stores documents artifacts and metadata providing
+regarding computable clinical knowledge and enables access to that information to requesters on demand.
 
 Artifact Consumer
-: The artifact consumer is a user-oriented application component that allows an end user (e.g., clinician, informaticist, interface engineer, et cetera) to explore clinical knowledge resources available from a Clinical Knowledge Resource Repository.
+: The artifact consumer is a user-oriented application component that allows an end user (e.g.,
+clinician, informaticist, interface engineer, et cetera) to explore clinical knowledge resources
+available from a Clinical Knowledge Resource Repository.
 
 Assessment Requestor
-: The assessment requestor is an application component that needs assessment data and can request the capture of assessment information from an assessor.
+: The assessment requestor is an application component that needs assessment data and can request the
+capture of assessment information from an assessor.
 
 Assessor
-: An assessor is a user-oriented application that allows a clinician, patient or other party to answer the questions associated with an assessment instrument and obtain a completed response.
+: An assessor is a user-oriented application that allows a clinician, patient or other party to answer the
+questions associated with an assessment instrument and obtain a completed response.
 
 These actors participate in the following transactions:
 
 Query Artifact [PCC-X1]
-: this transaction uses RESTful API to query assessment instruments that meet certain criteria, e.g., by topic, coded concern, procedure, clinical area, et cetera, retrieving the metadata essential to enable the consumer to determine if it wants to know more about the assessment instrument.
-The returned result would list the metadata associated with the various Questionnaire resources available but need not contain complete data on items in the instrument.
+:   this transaction uses RESTful API to query assessment instruments that meet certain criteria, e.g., by
+    topic, coded concern, procedure, clinical area, et cetera, retrieving the metadata essential to enable the
+    consumer to determine if it wants to know more about the assessment instrument.
+
+    The returned result would list the metadata associated with the various Questionnaire resources available
+    but need not contain complete data on items in the instrument.
 
 Request Artifact [PCC-X2]
-: this transaction uses RESTful API to requests the complete details of an Assessment Instrument in order to implement it for evaluation or production use.
+:   this transaction uses RESTful API to requests the complete details of an Assessment Instrument in
+    order to implement it for evaluation or production use.
 
 Request Assessment [PCC-X3]
-: this transaction initiates an assessment.
+:   this transaction initiates an assessment.
 
 Report Assessment [PCC-X4]
-: this transaction reports on the results of an assessment via a restful API.
+:   this transaction reports on the results of an assessment via a restful API.
 
 The figure below depicts how these actors interact with each other through the IHE transactions
 described above.
@@ -123,28 +133,40 @@ For each assessment instrument that can be accessed by a Clinical Knowledge Reso
 
 2.  Provide at least one Launch URL for a SMART on FHIR application that performs the assessment.
 
-3.  Demonstrate that the Assessor actor it is grouped with can be configured to perform the specified assessment with an Assessment Requestor.
+3.  Demonstrate that the Assessor actor it is grouped with can be configured to perform the specified assessment with an
+Assessment Requestor.
 
 An example CapabilityStatement resource for this actor can be found at [acdc-actor-clinicalknowledgerepository.html](acdc-actor-clinicalknowledgerepository.html)
 
 ### Artifact Consumer
-The Artifact Consumer in this profile sends FHIR-based queries to the Clinical Knowledge Resource Repository to search for and obtain one or more clinical knowledge artifacts.  Rendering and further processing of these artifacts is defined by the Assessor and Assessment Requestor in this profile.
+The Artifact Consumer in this profile sends FHIR-based queries to the Clinical Knowledge Resource Repository to
+search for and obtain one or more clinical knowledge artifacts.  Rendering and further processing of these artifacts
+is defined by the Assessor and Assessment Requestor in this profile.
 
-1.  Given that a user with appropriate permissions is operating the provider’s health IT system, when a new assessment instrument is needed, then the user can locate an appropriate assessment instrument, and configure that health IT system to use it to capture an assessment.
+1.  Given that a user with appropriate permissions is operating the provider’s health IT system, when a new assessment
+instrument is needed, then the user can locate an appropriate assessment instrument, and configure that health IT system
+to use it to capture an assessment.
 
-2.  A healthcare provider’s health IT system must be able to support assessments from a Clinical Knowledge Resource Repository that implements the Questionnaire Retrieval Option.
+2.  A healthcare provider’s health IT system must be able to support assessments from a Clinical Knowledge Resource
+Repository that implements the Questionnaire Retrieval Option.
 
-3.  A healthcare provider’s health IT system must be able to support assessments from a Clinical Knowledge Resource Repository that implements the Assessor Option.
+3.  A healthcare provider’s health IT system must be able to support assessments from a Clinical Knowledge Resource
+Repository that implements the Assessor Option.
 
 An example CapabilityStatement resource for this actor can be found at [acdc-actor-clinicalknowledgerepository.html](acdc-actor-clinicalknowledgerepository.html)
 
 ### Assessor
-The Assessor in this profile performs an assessment and reports the results as a QuestionnaireResponse to the appropriate patient and encounter. It must populate the QuestionnaireResponse resource with the appropriate references to the subject, encounter, author and questionnaire resources.  The subject, encounter, and author resources must be obtained from the current context of the Assessor actor.  The questionnaire resource should be represented by the canonical url which uniquely identifies the assessment instrument.
+The Assessor in this profile performs an assessment and reports the results as a QuestionnaireResponse to the appropriate
+patient and encounter. It must populate the QuestionnaireResponse resource with the appropriate references to the subject,
+encounter, author and questionnaire resources.  The subject, encounter, and author resources must be obtained from the
+current context of the Assessor actor.  The questionnaire resource should be represented by the canonical url which
+uniquely identifies the assessment instrument.
 
 An example CapabilityStatement resource for this actor can be found at [acdc-actor-assessor.html](acdc-actor-clinicalknowledgerepository.html)
 
 ### Assessment Requestor
-The Assessment Requestor in this profile requests an assessment of an assessor and processes results returned in a QuestionnaireResponse resource.  It must accept an assessment as a QuestionnaireResponse resource from the Assessor actor.
+The Assessment Requestor in this profile requests an assessment of an assessor and processes results returned in a
+QuestionnaireResponse resource.  It must accept an assessment as a QuestionnaireResponse resource from the Assessor actor.
 
 An example CapabilityStatement resource for this actor can be found at [acdc-actor-assessorrequestor.html](acdc-actor-clinicalknowledgerepository.html)
 
@@ -152,29 +174,42 @@ An example CapabilityStatement resource for this actor can be found at [acdc-act
 This profile provides three options:
 
 ### Questionnaire Item Retrieval Option
-The Questionnaire Item Retrieval option enables systems to interpret the content of the returned Questionnaire resources using their own Questionnaire handling interface.
-A Clinical Knowledge Resource Repository that implements the Questionnaire Item Retrieval Option shall include the necessary information in Questionnaire.item fields in the returned Questionnaire resource to enable execution of the assessment instrument.
+The Questionnaire Item Retrieval option enables systems to interpret the content of the returned Questionnaire
+resources using their own Questionnaire handling interface.
+
+A Clinical Knowledge Resource Repository that implements the Questionnaire Item Retrieval Option shall include
+the necessary information in Questionnaire.item fields in the returned Questionnaire resource to enable execution
+of the assessment instrument.
 
 ### Assessor Option
-The Assessor Option enables a Clinical Knowledge Repository to provide Assessment capabilities for applications which cannot provide their user interface to implement the user interactions described by the Questionnaire resource.
-A Clinical Knowledge Resource Repository that implements the Assessor Option shall be grouped with an Assessor actor that is able to perform the assessments it provides.
+The Assessor Option enables a Clinical Knowledge Repository to provide Assessment capabilities for applications
+which cannot provide their user interface to implement the user interactions described by the Questionnaire resource.
+
+A Clinical Knowledge Resource Repository that implements the Assessor Option shall be grouped with an
+Assessor actor that is able to perform the assessments it provides.
 
 ### EHR Launch Option
-The EHR Launch Option allows assessments to be performed using the SMART on FHIR EHR Launch workflow from the providers EHR system.
+The EHR Launch Option allows assessments to be performed using the SMART on FHIR EHR Launch workflow from
+the providers EHR system.
 
 #### EHR Launch Requirements on Clinical Knowledge Resource Repository
-A Clinical Knowledge Resource Repository that implements the EHR Launch Option shall include at least one launch-url extension in Questionnaire resources to tell the receiver how to launch a SMART on FHIR application that will implement the assessment.  That assessor must implement the FHIR EHR Launch Option.
+A Clinical Knowledge Resource Repository that implements the EHR Launch Option shall include at least one
+launch-url extension in Questionnaire resources to tell the receiver how to launch a SMART on FHIR application
+that will implement the assessment.  That assessor must implement the FHIR EHR Launch Option.
 
 #### EHR Launch Requirements on Assessment Requestor
-An Assessment Requestor that implements the EHR Launch option shall initiate a SMART on FHIR EHR Launch protocol via the launch url associated with the assessment.
+An Assessment Requestor that implements the EHR Launch option shall initiate a SMART on FHIR EHR Launch protocol
+via the launch url associated with the assessment.
 
 #### EHR Launch Requirements on Assessor
-An Assessor that implements the EHR Launch option supports initiation of the assessment via the SMART on FHIR EHR Launch protocol and allows specification of the canonical url of the Questionnaire resource in the def parameter of the launch url.
+An Assessor that implements the EHR Launch option supports initiation of the assessment via the SMART on FHIR EHR
+Launch protocol and allows specification of the canonical url of the Questionnaire resource in the def parameter
+of the launch url.
 
 ## Security Considerations
 See
-[ITI TF-2.x Appendix Z.8 “Mobile Security Considerations”](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_Appx-Z.pdf#page=9
-"Mobile Security Considerations") for general background on “Mobile” security considerations, and recommendations regarding security.
+[ITI TF-2.x Appendix Z.8 "Mobile Security Considerations"](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_Appx-Z.pdf#page=9
+"Mobile Security Considerations") for general background on "Mobile" security considerations, and recommendations regarding security.
 
 The ACDC profile provides an API for accessing data element level details that are identifiable to a specific patient. All the data
 communicated, including the query parameters, should be considered patient identifiable information (PII). Assessments may also
