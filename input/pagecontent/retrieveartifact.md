@@ -31,7 +31,7 @@ at the time of deployment.
 <table border='1' borderspacing='0'>
 <thead><tr><th>Standard</th><th>Name</th></tr></thead>
 <tbody>
-<tr><td>HL7 FHIR</td><td><a href='http://www.hl7.org/fhir/R4/index.html'>HL7&#174; FHIR#174 standard R4</a></td></tr>
+<tr><td>HL7 FHIR</td><td><a href='http://www.hl7.org/fhir/R4/index.html'>HL7&#174; FHIR&#174; standard R4</a></td></tr>
 <tr><td>IETF RFC 2616</td>
     <td><a href='https://ietf.org/rfc/rfc2616.html'>Hypertext Transfer Protocol - HTTP/1.1</a></td></tr>
 <tr><td>IETF RFC 7540</td>
@@ -41,7 +41,7 @@ at the time of deployment.
 <tr><td>IETF RFC 4627</td>
     <td><a href='https://ietf.org/rfc/rfc4627.html'>The application/json Media Type for JavaScript Object Notation (JSON)</a></td></tr>
 <tr><td>IETF RFC 6585</td>
-    <td><a href='https://ietf.org/rfc/rfc6585.html'>Additional HTTP Status Codes(</a></td></tr>
+    <td><a href='https://ietf.org/rfc/rfc6585.html'>Additional HTTP Status Codes</a></td></tr>
 </tbody>
 </table>
 
@@ -61,16 +61,13 @@ When the Artifact Consumer needs to access a Questionnaire Resources matching
 the canonical url of a Questionnaire it issues a Retrieve Artifact message.
 
 ##### Message Semantics
-The Artifact Consumer executes an HTTP GET against the proper Clinical Knowledge Resource Repository’s ACDC URL.
-The search target follows the FHIR http specification (http://hl7.org/fhir/R4/http.html), addressing the proper FHIR Resource type, according to the supported query options (see Section 3.X2.4.1.2.1). The syntax of the FHIR query is:
-GET [base]/Questionnaire?{[parameters]}
-with the following constraints:
-* The [base] represents the Service Base URL
-* The [parameters] represents a series of encoded name-value pairs representing the filter for the query,
-as specified in Section 3.X2.4.1.2.1, as well as control parameters to modify the behavior of the
-Clinical Knowledge Resource Repository such as response format, or pagination.
-See ITI TF-2x: Appendix Z.6 for more details on response format.
+The Artifact Consumer executes an HTTP GET against the proper Clinical Knowledge Resource Repository's ACDC URL.
 
+The search target follows the FHIR http specification (http://hl7.org/fhir/R4/http.html), addressing the proper 
+FHIR Resource type, according to the supported query parameters. The syntax of the FHIR query is:
+```
+GET [base]/Questionnaire?{[parameters]}
+```
 with the following constraints:
 * The [base] represents the Service Base URL
 * The [parameters] represents a series of encoded name-value pairs representing the filter for
