@@ -400,33 +400,6 @@
 				{
 					"reference" : "ValueSet/ihe-acdc-questionnaireresponse-status"
 				 }
-			 },
-
-			{
-				"reference" :
-				{
-					"reference" : "Patient/example"
-				 },
-
-				"exampleBoolean" : true
-			 },
-
-			{
-				"reference" :
-				{
-					"reference" : "Encounter/example"
-				 },
-
-				"exampleBoolean" : true
-			 },
-
-			{
-				"reference" :
-				{
-					"reference" : "Practitioner/example"
-				 },
-
-				"exampleBoolean" : true
 			 }
 		 ],
 
