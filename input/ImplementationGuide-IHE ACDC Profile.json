@@ -14,7 +14,7 @@
 			"telecom" :
 			[
 				{
-					"system" : "web",
+					"system" : "url",
 					"value" : "https://www.ihe.net/ihe_domains/patient_care_coordination/"
 				 },
 
@@ -35,7 +35,7 @@
 				 },
 
 				{
-					"system" : "web",
+					"system" : "url",
 					"value" : "https://motorcycleguy.blogspot.com"
 				 }
 			 ]
