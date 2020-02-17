@@ -306,15 +306,18 @@ would be expressed in FHIR as
 ##### XDS CXi mapped to FHIR Identifier Type
 In XDS, a subset of CX is defined as CXi.
 The following mapping shall be used unless otherwise specified:
-> CXi.1 (id) = Identifier.value
-> CXi.4 (assigning authority) = Identifier.system
-> CXi.5 (identifier type code) = Identifier.type
-> CXi.6 (homeCommunityId) = <not mapped>
+
+* CXi.1 (id) = Identifier.value
+* CXi.4 (assigning authority) = Identifier.system
+* CXi.5 (identifier type code) = Identifier.type
+* CXi.6 (homeCommunityId) = <not mapped>
+
 Thus, a CXi value such as
 ```
  2013001^^^&1.2.3.4.5.6&ISO^urn:ihe:iti:xds:2013:accession
 ```
 would be expressed in FHIR as
+
 ```
 <identifier>
     <type>
