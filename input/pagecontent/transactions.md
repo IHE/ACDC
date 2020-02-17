@@ -31,7 +31,7 @@ Interaction Diagram
     transaction, with related processing within an actor shown as a rectangle
     and time progressing downward, similar to the following
 
-![Sample Interaction](sampleinteraction.svg "Sample Interaction")
+![Sample Interaction](Sample-Interaction.svg "Sample Interaction")
 <div style='clear: left'/>
 
 The interaction diagrams used in the IHE IT Infrastructure Technical Framework are
