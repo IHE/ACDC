@@ -158,8 +158,5 @@
         "start": "2012"
       }
     }
-  ],
-  "managingOrganization": {
-    "reference": "Organization/1"
-  }
+  ]
 }

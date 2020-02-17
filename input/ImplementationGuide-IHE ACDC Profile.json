@@ -155,6 +155,7 @@
 				 },
 
 				"name" : "QuestionnaireResponse-ihe-acdc-example-PHQ-2-questionnaireresponse",
+				"description": "An instance of PHQ-2 Depression Screening Assessment Instrument for the example patient",
 				"exampleCanonical" : "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
 			 },
 

@@ -170,7 +170,7 @@
     "display": "Dr. Adam Careful"
   },
   "source": {
-    "reference": "Patient/example",
+    "reference": "Patient/patient-example",
     "display": "Peter James Chalmers"
   },
   "item": [

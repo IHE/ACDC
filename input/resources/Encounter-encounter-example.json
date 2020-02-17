@@ -3,7 +3,7 @@
   "id": "encounter-example",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter with patient @example</div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter with patient @patient-example</div>"
   },
   "status": "in-progress",
   "class": {
@@ -12,6 +12,6 @@
     "display": "inpatient encounter"
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/patient-example"
   }
 }
