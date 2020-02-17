@@ -2,26 +2,26 @@
 
 The IHE AC/DC Profile describes four actors, defined below:
 
-Clinical Knowledge Resource Repository
+<a name='CKR'> </a>Clinical Knowledge Resource Repository
 : A Clinical Knowledge Resource Repository stores documents artifacts and metadata providing
 regarding computable clinical knowledge and enables access to that information to requesters on demand.
 
-Artifact Consumer
+<a name='AC'> </a>Artifact Consumer
 : The Artifact Consumer is a user-oriented application component that allows an end user (e.g.,
 clinician, informaticist, interface engineer, et cetera) to explore clinical knowledge resources
 available from a Clinical Knowledge Resource Repository.
 
-Assessment Requester
+<a name='AR'> </a>Assessment Requester
 : The Assessment Requester is an application component that needs assessment data and can request the
 capture of assessment information from an assessor.
 
-Assessor
+<a name='A'> </a>Assessor
 : An Assessor is a user-oriented application that allows a clinician, patient or other party to answer the
 questions associated with an assessment instrument and obtain a completed response.
 
 These actors participate in the following transactions:
 
-<a name='pcc-x1'> </a> Query Artifact [PCC-X1]
+<a name='pcc-x1'> </a> [Query Artifact [PCC-X1]](queryartifact.html)
 :   The Query Artifact transaction uses RESTful API to query assessment instruments that meet certain criteria, e.g., by
     topic, coded concern, procedure, clinical area, et cetera, retrieving the metadata essential to enable the
     consumer to determine if it wants to know more about the assessment instrument.
@@ -30,8 +30,8 @@ These actors participate in the following transactions:
     but need not contain complete data on items in the instrument.  The returned Questionnaire resources conform
     to the [ACDC Questionaire FHIR Resource profile](ihe-acdc-questionnaire.html).
 
-<a name='pcc-x2'> </a> Request Artifact [PCC-X2]
-:   The Request Artifact transaction uses RESTful API to requests the complete details of an Assessment Instrument in
+<a name='pcc-x2'> </a> [Retrieve rtifact [PCC-X2]](retrieveartifact.html)
+:   The Retrieve Artifact transaction uses RESTful API to requests the complete details of an Assessment Instrument in
     order to implement it for evaluation or production use. The returned Questionnaire conforms to
     the [ACDC Questionaire FHIR Resource profile](ihe-acdc-questionnaire.html).
 

@@ -1,0 +1,7 @@
+@startuml
+agent "Assessment\nRequester" as CKR
+agent "Assessor" as AC
+usecase (Report\nAssessment\n[PCC-X4]) as (PCCX4)
+CKR --> (PCCX4)
+AC --> (PCCX4)
+@enduml

@@ -12,7 +12,7 @@ of the assessment instrument.
 
 <a name="assessor-option"> </a>
 #### Assessor Option
-The Assessor Option enables a Clinical Knowledge Repository to provide Assessment capabilities for applications
+The Assessor Option enables a Clinical Knowledge Resource Repository to provide Assessment capabilities for applications
 which cannot provide their user interface to implement the user interactions described by the Questionnaire resource.
 
 A Clinical Knowledge Resource Repository that implements the Assessor Option shall be grouped with an

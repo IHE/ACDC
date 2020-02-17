@@ -8,7 +8,7 @@
     "json"
   ],
   "fhirVersion": "4.0.1",
-  "description": "This CapabilityStatement resource demonstrates how a system documents conformance\nas a Clinical Knowledge Repository Actor in the ACDC Profile.",
+  "description": "This CapabilityStatement resource demonstrates how a system documents conformance\nas a Clinical Knowledge Resource Repository Actor in the ACDC Profile.",
   "rest": [
     {
       "mode": "server",
@@ -16,7 +16,7 @@
         {
           "type": "Questionnaire",
           "profile": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire",
-          "documentation": "The Clinical Knowledge Repository Actor responds to Questionnaire read and search interactions",
+          "documentation": "The Clinical Knowledge Resource Repository Actor responds to Questionnaire read and search interactions",
           "interaction": [
             {
               "code": "search-type",
@@ -36,7 +36,7 @@
             {
               "name": "context",
               "type": "token",
-              "documentation": "This search parameter allows assessment instruments to be located based upon their use context.\nA Clinical Knowledge Repository Actor must support at least one of: context (token), context-quantity (quantity),\ncontext-type (token), context-type-quantity (composite), or context-type-value (composite) to enable users to\nidentify questionnaires based on the context of use. At least one of the above search parameters must be supported\nand documented in the capability statement."
+              "documentation": "This search parameter allows assessment instruments to be located based upon their use context.\nA Clinical Knowledge Resource Repository Actor must support at least one of: context (token), context-quantity (quantity),\ncontext-type (token), context-type-quantity (composite), or context-type-value (composite) to enable users to\nidentify questionnaires based on the context of use. At least one of the above search parameters must be supported\nand documented in the capability statement."
             },
             {
               "name": "date",

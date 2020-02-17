@@ -1,7 +1,7 @@
 
 ## Notes
 ### EHR Launch URL
-When an Clinical Knowledge Repository that supports the EHR Launch option returns the questionnaire, it
+When an Clinical Knowledge Resource Repository that supports the EHR Launch option returns the questionnaire, it
 must return at least one extension\[@url="http://ihe.net/fhir/ACDC/StructureDefinition/questionnaire-launchurl"] field populated with a URL that will execute the questionnaire
 via the SMART on FHIR EHR Launch workflow.
 

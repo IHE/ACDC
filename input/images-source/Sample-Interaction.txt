@@ -1,0 +1,11 @@
+@startuml
+hide footbox
+participant "Actor 1" as A1
+participant "Actor 2" as A2
+participant "Actor 3" as A3
+A1 -> A2 ++ : Message 1
+activate A1
+A2 -> A3 ++ : Message 2
+deactivate A2
+A3 -> A1 : Message 3
+@enduml

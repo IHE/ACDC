@@ -1,0 +1,7 @@
+@startuml
+agent "Actor 1" as A1
+agent "Actor 2" as A2
+usecase (Transaction 1\n[PCC-##]) as (PCCX1)
+A1 --> (PCCX1)
+A2 --> (PCCX1)
+@enduml

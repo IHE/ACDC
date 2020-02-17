@@ -14,6 +14,11 @@
 			"telecom" :
 			[
 				{
+					"system" : "web",
+					"value" : "https://www.ihe.net/ihe_domains/patient_care_coordination/"
+				 },
+
+				{
 					"system" : "email",
 					"value" : "pcc@ihe.net"
 				 }
@@ -27,6 +32,11 @@
 				{
 					"system" : "email",
 					"value" : "kboone@ainq.com"
+				 },
+
+				{
+					"system" : "web",
+					"value" : "https://motorcycleguy.blogspot.com"
 				 }
 			 ]
 		 }
@@ -201,7 +211,31 @@
 				{
 					"nameUrl" : "transactions.html",
 					"title" : "IHE ACDC Transactions",
-					"generation" : "markdown"
+					"generation" : "markdown",
+					"page" :
+					[
+						{
+							"nameUrl" : "queryartifact.html",
+							"title" : "[PCC-X1] Query Artifact Transaction",
+							"generation" : "markdown"
+						 },
+						{
+							"nameUrl" : "retrieveartifact.html",
+							"title" : "[PCC-X2] Retrieve Artifact Transaction",
+							"generation" : "markdown"
+						 },
+						{
+							"nameUrl" : "requestassessment.html",
+							"title" : "[PCC-X3] Request Assessment Transaction",
+							"generation" : "markdown"
+						 },
+
+						{
+                            "nameUrl" : "reportassessment.html",
+                            "title" : "[PCC-X4] Report Assessment Transaction",
+							"generation" : "markdown"
+						 }
+					 ]
 				 },
 
 				{

@@ -1,6 +1,6 @@
 Instance:       ACDCActorClinicalKnowledgeRepository
 InstanceOf:     CapabilityStatement
-Title:          "IHE ACDC Clinical Knowledge Repository Actor Capability Statement"
+Title:          "IHE ACDC Clinical Knowledge Resource Repository Actor Capability Statement"
 * id = "acdc-actor-clinicalknowledgerepository"
 * name = "ACDC_ClinicalKnowledgeRepository"
 * kind = #requirements
@@ -9,12 +9,12 @@ Title:          "IHE ACDC Clinical Knowledge Repository Actor Capability Stateme
 * fhirVersion = #4.0.1
 * description = """
 This CapabilityStatement resource demonstrates how a system documents conformance
-as a Clinical Knowledge Repository Actor in the ACDC Profile.
+as a Clinical Knowledge Resource Repository Actor in the ACDC Profile.
 """
 * rest[0].mode = #server
 * rest[0].resource.type = #Questionnaire
 * rest[0].resource.profile =  "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"
-* rest[0].resource.documentation = "The Clinical Knowledge Repository Actor responds to Questionnaire read and search interactions"
+* rest[0].resource.documentation = "The Clinical Knowledge Resource Repository Actor responds to Questionnaire read and search interactions"
 * rest[0].resource.interaction[0].code = #search-type
 * rest[0].resource.interaction[0].documentation = "This interaction corresponds to the IHE PCC-X1 transaction."
 * rest[0].resource.interaction[1].code = #read
@@ -37,7 +37,7 @@ It must be documented in the capability statement
 * rest[0].resource.searchParam[1].type = #token
 * rest[0].resource.searchParam[1].documentation = """
 This search parameter allows assessment instruments to be located based upon their use context.
-A Clinical Knowledge Repository Actor must support at least one of: context (token), context-quantity (quantity),
+A Clinical Knowledge Resource Repository Actor must support at least one of: context (token), context-quantity (quantity),
 context-type (token), context-type-quantity (composite), or context-type-value (composite) to enable users to
 identify questionnaires based on the context of use. At least one of the above search parameters must be supported
 and documented in the capability statement.

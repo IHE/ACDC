@@ -5,7 +5,49 @@
   <li><a href="actorsandtransactions.html">Actors and Transactions</a></li>
   <li><a href="profileoptions.html">Profile Options</a></li>
   <li><a href="securityconsiderations.html">Security Considerations</a></li>
-  <li><a href="transactions.html">Content Profiles</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Transactions<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="transactions.html">Transactions Overview</a>
+      </li>
+      <li>
+        <a href="queryartifact.html">[PCC-X1] Query Artifact</a>
+      </li>
+      <li>
+        <a href="retrieveartifact.html">[PCC-X2] Retrieve Artifact</a>
+      </li>
+      <li>
+        <a href="requestassessment.html">[PCC-X3] Request Assessment</a>
+      </li>
+      <li>
+        <a href="reportassessment.html">[PCC-X4] Report Assessment</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Content Profiles<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ihe-acdc-questionnaire.html">Questionnaire Resource</a>
+      </li>
+      <li>
+        <a href="ihe-acdc-questionnaireresponse.html">Questionnaire Response Resource</a>
+      </li>
+      <li>
+        <a href="extension-questionnaire-launchurl.html">Launch URL Extension</a>
+      </li>
+      <li>
+        <a href="extension-ihe-acdc-contained-questionnairereference.html">Contained Questionnaire Extension</a>
+      </li>
+    </ul>
+  </li>
+
+  <li><a href="transactions.html">Transactions</a></li>
   <li><a href="contentprofiles.html">Content Profiles</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
 </ul>

@@ -1,0 +1,6 @@
+@startuml
+hide footbox
+participant "Assessment\nRequester" as AR
+participant "Assessor\n" as A
+AR -> A : Report Assessment
+@enduml

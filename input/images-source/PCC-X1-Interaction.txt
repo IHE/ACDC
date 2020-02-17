@@ -1,0 +1,7 @@
+@startuml
+hide footbox
+participant "Artifact\nConsumer" as AC
+participant "Clinical Knowledge\nRepository" as CKR
+AC -> CKR ++ : Query Artifact Request
+return Query Artifact Response
+@enduml
