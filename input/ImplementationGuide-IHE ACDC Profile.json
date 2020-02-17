@@ -171,7 +171,7 @@
 			{
 				"reference" :
 				{
-					"reference" : "Patient/example"
+					"reference" : "Patient/patient-example"
 				 },
 
 				"name" : "Example Patient",
@@ -182,7 +182,7 @@
 			{
 				"reference" :
 				{
-					"reference" : "Encounter/example"
+					"reference" : "Encounter/encounter-example"
 				 },
 
 				"name" : "Example Encounter",
@@ -193,7 +193,7 @@
 			{
 				"reference" :
 				{
-					"reference" : "Practitioner/example"
+					"reference" : "Practitioner/practitioner-example"
 				 },
 
 				"name" : "Example Pracitioner",

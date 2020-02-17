@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "example",
+  "id": "practitioner-example",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Dr Adam Careful is a Referring Practitioner for Acme Hospital from 1-Jan 2012 to 31-Mar\n        2012</p>\n    </div>"
