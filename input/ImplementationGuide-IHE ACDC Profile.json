@@ -193,7 +193,7 @@
 			{
 				"reference" :
 				{
-					"reference" : "Pracitioner/example"
+					"reference" : "Practitioner/example"
 				 },
 
 				"name" : "Example Pracitioner",
@@ -423,7 +423,7 @@
 			{
 				"reference" :
 				{
-					"reference" : "Pracitioner/example"
+					"reference" : "Practitioner/example"
 				 },
 
 				"exampleBoolean" : true
