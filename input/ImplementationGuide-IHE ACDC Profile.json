@@ -166,6 +166,39 @@
 
 				"name" : "Status Values allowed in a QuestionnaireResponse resource",
 				"description" : "Defines the Status Values allowed in a QuestionnaireResponse resource used withe IHE ACDC Profile"
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "Patient/example"
+				 },
+
+				"name" : "Example Patient",
+				"description" : "Example patient from FHIR specification",
+				"exampleBoolean" : true
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "Encounter/example"
+				 },
+
+				"name" : "Example Encounter",
+				"description" : "Example encounter from FHIR specification",
+				"exampleBoolean" : true
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "Pracitioner/example"
+				 },
+
+				"name" : "Example Pracitioner",
+				"description" : "Example pracitioner from FHIR specification",
+				"exampleBoolean" : true
 			 }
 		 ],
 
@@ -219,11 +252,13 @@
 							"title" : "[PCC-X1] Query Artifact Transaction",
 							"generation" : "markdown"
 						 },
+
 						{
 							"nameUrl" : "retrieveartifact.html",
 							"title" : "[PCC-X2] Retrieve Artifact Transaction",
 							"generation" : "markdown"
 						 },
+
 						{
 							"nameUrl" : "requestassessment.html",
 							"title" : "[PCC-X3] Request Assessment Transaction",
@@ -231,8 +266,8 @@
 						 },
 
 						{
-                            "nameUrl" : "reportassessment.html",
-                            "title" : "[PCC-X4] Report Assessment Transaction",
+							"nameUrl" : "reportassessment.html",
+							"title" : "[PCC-X4] Report Assessment Transaction",
 							"generation" : "markdown"
 						 }
 					 ]
@@ -267,6 +302,134 @@
 
 	"manifest" :
 	{
+		"rendering" : "",
+		"resource" :
+		[
+			{
+				"reference" :
+				{
+					"reference" : "StructureDefinition/ihe-acdc-contained-questionnairereference"
+				 },
+
+				"exampleBoolean" : false
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "StructureDefinition/questionnaire-launchurl"
+				 },
+
+				"exampleBoolean" : false
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "StructureDefinition/ihe-acdc-questionnaire"
+				 },
+
+				"exampleBoolean" : false
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "StructureDefinition/ihe-acdc-questionnaireresponse"
+				 },
+
+				"exampleBoolean" : false
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "CapabilityStatement/acdc-actor-artifactconsumer"
+				 },
+
+				"exampleBoolean" : true
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "CapabilityStatement/acdc-actor-assessmentrequestor"
+				 },
+
+				"exampleBoolean" : true
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "CapabilityStatement/acdc-actor-assessor"
+				 },
+
+				"exampleBoolean" : true
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "CapabilityStatement/acdc-actor-clinicalknowledgerepository"
+				 },
+
+				"exampleBoolean" : true
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "Questionnaire/ihe-acdc-example-PHQ-2-questionnaire"
+				 },
+
+				"exampleCanonical" : "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "QuestionnaireResponse/ihe-acdc-example-PHQ-2-questionnaireresponse"
+				 },
+
+				"exampleCanonical" : "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "ValueSet/ihe-acdc-questionnaireresponse-status"
+				 }
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "Patient/example"
+				 },
+
+				"exampleBoolean" : true
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "Encounter/example"
+				 },
+
+				"exampleBoolean" : true
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "Pracitioner/example"
+				 },
+
+				"exampleBoolean" : true
+			 }
+		 ],
+
 		"image" :
 		[
 			"images/ActorsAndTransactions.png",

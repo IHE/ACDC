@@ -20,11 +20,7 @@
           "interaction": [
             {
               "code": "search-type",
-              "documentation": "This interaction corresponds to the IHE PCC-X1 transaction."
-            },
-            {
-              "code": "read",
-              "documentation": "This interaction corresponds to the IHE PCC-X2 transaction."
+              "documentation": "This interaction corresponds to the IHE PCC-X1 and PCC-X2 transactions."
             }
           ]
         }
