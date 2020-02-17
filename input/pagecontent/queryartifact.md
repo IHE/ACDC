@@ -31,11 +31,11 @@ make recommendations on categories and codes that should be considered.
 <table border='1' borderspacing='0'>
 <thead><tr><th>Standard</th><th>Name</th></tr></thead>
 <tbody>
-<tr><td>HL7 FHIR</td><td><a href='http://www.hl7.org/fhir/R4/index.html'>HL7® FHIR® standard R4</a></td></tr>
+<tr><td>HL7 FHIR</td><td><a href='http://www.hl7.org/fhir/R4/index.html'>HL7&#174; FHIR#174 standard R4</a></td></tr>
 <tr><td>IETF RFC 2616</td>
-    <td><a href='https://ietf.org/rfc/rfc2616.html'>Hypertext Transfer Protocol – HTTP/1.1</a></td></tr>
+    <td><a href='https://ietf.org/rfc/rfc2616.html'>Hypertext Transfer Protocol - HTTP/1.1</a></td></tr>
 <tr><td>IETF RFC 7540</td>
-    <td><a href='https://ietf.org/rfc/rfc7540.html'>Hypertext Transfer Protocol – HTTP/2</a></td></tr>
+    <td><a href='https://ietf.org/rfc/rfc7540.html'>Hypertext Transfer Protocol - HTTP/2</a></td></tr>
 <tr><td>IETF RFC 3986</td>
     <td><a href='https://ietf.org/rfc/rfc3986.html'>Uniform Resource Identifier (URI): Generic Syntax</a></td></tr>
 <tr><td>IETF RFC 4627</td>
@@ -57,7 +57,7 @@ ACDC does not mandate any additional extended or custom method.
 When the Artifact Consumer needs to discover Questionnaire Resources matching various search parameters it issues a Query Artifact message.
 
 ###### Message Semantics
-The Artifact Consumer executes an HTTP GET against the proper Clinical Knowledge Resource Repository’s ACDC URL.
+The Artifact Consumer executes an HTTP GET against the proper Clinical Knowledge Resource Repository's ACDC URL.
 The search target follows the [FHIR http specification](http://hl7.org/fhir/R4/http.html), addressing the proper
 FHIR Resource type, according to the supported [query options](#query-parameters).
 The syntax of the FHIR query is:

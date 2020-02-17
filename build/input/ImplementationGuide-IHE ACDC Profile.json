@@ -12,9 +12,14 @@
       "name": "IHE Patient Care Coordination",
       "telecom": [
         {
-          "system": "email",
+          "system": "url",
           "value": "https://www.ihe.net/ihe_domains/patient_care_coordination/"
-        }
+        },
+        {
+            "system": "email",
+            "value": "pcc@ihe.net"
+          }
+
       ]
     },
     {
