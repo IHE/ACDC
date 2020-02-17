@@ -19,8 +19,8 @@
   "abstract": false,
   "context": [
     {
-      "type": "element",
-      "expression": "Element"
+      "type": "fhirpath",
+      "expression": "Questionnaire"
     }
   ],
   "type": "Extension",
