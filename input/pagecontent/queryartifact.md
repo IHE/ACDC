@@ -41,7 +41,7 @@ make recommendations on categories and codes that should be considered.
 <tr><td>IETF RFC 4627</td>
     <td><a href='https://ietf.org/rfc/rfc4627.html'>The application/json Media Type for JavaScript Object Notation (JSON)</a></td></tr>
 <tr><td>IETF RFC 6585</td>
-    <td><a href='https://ietf.org/rfc/rfc6585.html'>Additional HTTP Status Codes(</a></td></tr>
+    <td><a href='https://ietf.org/rfc/rfc6585.html'>Additional HTTP Status Codes</a></td></tr>
 </tbody>
 </table>
 
