@@ -39,7 +39,7 @@ and update of Appendix E in ITI Technical Framework Volume 2x.
     Unclear if IHE should mention this approach, and then forbid it; or should just stay silent. Current text is silent, while
     having a clear recommendation.
 
-### Appendix Z – FHIR Implementation Material
+### Appendix Z - FHIR Implementation Material
 
 The HL7 FHIR standard has several overarching concepts, which should be profiled consistently throughout any mobile/lightweight
 IHE transactions using FHIR. IHE profiles FHIR, like any other standard, in ways that narrow the standard for specific use-cases.
