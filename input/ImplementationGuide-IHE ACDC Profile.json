@@ -278,7 +278,12 @@
 					"nameUrl" : "contentprofiles.html",
 					"title" : "IHE ACDC Content Profiles",
 					"generation" : "markdown"
-				 }
+				 },
+				{
+                    "nameUrl" : "appendixz.html",
+                    "title" : "IHE ITI Appendix Z: IHE Appendix on HL7&#x174; FHIR&#x174; Release 2.1",
+                    "generation" : "markdown"
+                 }
 			 ]
 		 },
 

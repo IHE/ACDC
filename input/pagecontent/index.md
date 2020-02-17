@@ -26,5 +26,8 @@ This guide is organized into three main sections:
     3. [Launch URL Extension](extension-questionnaire-launchurl.html)
     4. [Contained Questionnaire Reference Extension](extension-ihe-acdc-contained-questionnairereference.html)
 
+In addition, []ITI Appendix Z](https://www.ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_Appx-Z.pdf) has
+been [rendered as HTML](appendixz.html) as an aid to the reader.
+
 Click on any of the links above, head on over the [table of contents](toc.html), or
 if you are looking for a specific artifact, check out the [index](artifacts.html).
