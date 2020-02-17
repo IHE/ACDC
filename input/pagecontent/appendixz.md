@@ -14,7 +14,7 @@ a standard. During Trial Implementation, the IHE domain will update and republis
 with an updated IHE profile.
 </p>
 <p>This Technical Framework Supplement is based on Release 4 of the emerging HL7&#174; FHIR&#174; specification. HL7 describes FHIR Change
-Management and Versioning at <a href='https://www.hl7.org/fhir/versions.html'>https://www.hl7.org/fhir/versions.html</a>.
+Management and Versioning at [versions]('https://www.hl7.org/fhir/versions.html'>https://www.hl7.org/fhir/versions.html).
 </p>
 </div>
 
@@ -69,7 +69,7 @@ Parameters, CapabilityStatement, etc.
 </tbody>
 </table>
 
-### <a name='Z1'>Resource Bundles</a>
+### <span id='Z1'>Resource Bundles</span>
 Any operation that results in, or requires submission of, a collection of resources is done via a
 Resource `Bundle` mechanism. A FHIR `Bundle` Resource is a collection of resources that are related,
 for example, the result of a search operation, or a collection of historical versions of a resource.
@@ -78,7 +78,7 @@ Bundles are described at FHIR [Bundle](http://hl7.org/fhir/R4/bundle.html).
 
 This section has no specific constraints.
 
-### <a name='Z2'>Query Parameters</a>
+### <span id='Z2'>Query Parameters</span>
 FHIR [Search](http://hl7.org/fhir/R4/search.html) specifies a series of query parameter types which may be
 used when querying for a resource on a server. The representation of these query parameters
 within the HTTP request URL are intended to support a broad set of use cases and in some cases
@@ -89,10 +89,10 @@ in the request URL within IHE profiles.
 
 Query parameters not mentioned here are not constrained by this appendix.
 
-#### <a name='Z2-1'>Query Parameter Modifiers</a>
+#### <span id='Z2-1'>Query Parameter Modifiers</span>
 This section has no specific constraints.
 
-#### <a name='Z2-2'>Token Parameters</a>
+#### <span id='Z2-2'>Token Parameters</span>
 A token type is a parameter that provides an exact match search, either on a string of
 characters, potentially scoped by a URI. It is mostly used against a code or identifier
 data type where the value may have a URI that scopes its meaning, where the search is
@@ -101,7 +101,7 @@ other fields where exact matches are required. (See FHIR [Search#token](http://h
 
 This section has no specific constraints.
 
-#### <a name='Z2-3'>String Parameters</a>
+#### <span id='Z2-3'>String Parameters</span>
 For a simple string search, a string parameter serves as the input for a case- and
 accent-insensitive search against sequences of characters. By default, a field matches
 a string query if the value of the field equals or starts with the supplied parameter
@@ -112,7 +112,7 @@ IHE Profiles may choose to require support for the string search modifiers.
 
 This section has no specific constraints.
 
-### <a name='Z3'>CapabilityStatement Resource</a>
+### <span id='Z3'>CapabilityStatement Resource</span>
 HL7 FHIR defines how a service can declare a `CapabilityStatement` Resource describing
 the resources, transport, formats, and operations that can be performed on a series of
 resources for the service instance. The `CapabilityStatement` Resource is described in
@@ -121,7 +121,7 @@ FHIR [CapabilityStatement](http://hl7.org/fhir/R4/CapabilityStatement.html).
 Actors providing http server functionality shall publish a `CapabilityStatement` on the
 metadata endpoint as described in FHIR [HTTP#capabilities](http://hl7.org/fhir/R4/http.html#capabilities).
 
-### <a name='Z4'>StructureDefinition Resource</a>
+### <span id='Z4'>StructureDefinition Resource</span>
 HL7 FHIR allows service implementers to publish a `StructureDefinition` Resource describing
 the constraints, terminology bindings, extensions and search parameters supported for a
 resource type. This `StructureDefinition` Resource allows consumers to determine the capabilities
@@ -130,14 +130,14 @@ described in FHIR [StructuredDefinition](http://hl7.org/fhir/R4/structuredefinit
 
 This section has no specific constraints.
 
-### <a name='Z5'>Resource Reference URIs in FHIR</a>
+### <span id='Z5'>Resource Reference URIs in FHIR</span>
 Many of the defined elements in a resource are references to other resources. Using these
 references, the resources combine to build relationships between information. Resource
 References are described in FHIR [references](http://hl7.org/fhir/R4/references.html).
 
 This section has no specific constraints.
 
-### <a name='Z6'>Populating the Expected Response Format</Z6>
+### <span id='Z6'>Populating the Expected Response Format</Z6>
 The FHIR standard provides for response message content encoded as either XML or JSON. The
 server actor shall support both message encodings, whilst the client actors shall support
 one and may optionally support both.
@@ -164,7 +164,7 @@ To enable simpler query encoding, the value of `_format` may be the short "`json
 </tbody>
 </table>
 
-### <a name='Z7'>Guidance on Access Denied Results</a>
+### <span id='Z7'>Guidance on Access Denied Results</span>
 The server must choose the response carefully when an Access Denied condition exists. Returning too much
 information may expose details that should not be communicated. The Access Denied condition might be because
 of missing required Authentication, because the user is not authorized to access the endpoint, because the
@@ -197,7 +197,7 @@ a FHIR OperationOutcome with more details on the failure. See
 FHIR [Security#AccessDenied](http://hl7.org/fhir/R4/security.html#AccessDenied) and
 [OperationOutcome](http://hl7.org/fhir/R4/operationoutcome.html)
 
-### <a name='Z8'>Mobile Security Considerations</a>
+### <span id='Z8'>Mobile Security Considerations</span>
 
 There are many security and privacy concerns with mobile devices, including lack of physical control.
 Many common information technologies use of HTTP, including REST, access far less sensitive information
@@ -234,7 +234,7 @@ in the server audit log or browser history. The risk from this visibility should
 in system or operational design, by protecting the logs as sensitive data, or by designing
 other measures into the system to prevent inappropriate exposure.
 
-### <a name='Z9'>FHIR Data Types</a>
+### <span id='Z9'>FHIR Data Types</span>
 This section includes specific guidance and constraints that are common to use of FHIR Data types.
 
 #### Identifier Type
@@ -319,7 +319,7 @@ would be expressed in FHIR as:
     <value value="2013001"/>
 </identifier>
 ```
-### <a name='Z10'>Profiling conventions for constraints on FHIR</a>
+### <span id='Z10'>Profiling conventions for constraints on FHIR</span>
 The following terms refer to the values used in the OPT column of
 tables in ITI Technical Framework Volumes 2, 3, and 4 that define
 constraints being profiled:
@@ -361,9 +361,8 @@ X
 Add the following new section to the end of ITI TF-2x: Appendix E Usage of the CX Data Type in
 PID-3 Patient Identifier List
 </div>
-###
-###
-### E.3 <a name='E3'>FHIR Identifier Type</a>
+
+### E.3 <span id='E3'>FHIR Identifier Type</span>
 The HL7 FHIR standard uses the data type Identifier to express a business identifier that uniquely
 identifies a thing or object (see FHIR [Datatypes#identifier](http://hl7.org/fhir/R4/datatypes.html#identifier)
 including medical record numbers or patient identifiers. See Appendix Z.9.1 for general guidance on FHIR
