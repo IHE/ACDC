@@ -34,12 +34,7 @@ if you are looking for a specific artifact, check out the [index](artifacts.html
 
 You can also download:
 * [this entire guide](full-ig.zip),
-* the definition resources in
-    +   [json](definitions.json.zip),
-    +   [xml](definitions.xml.zip),
-    +   [ttl](definitions.ttl.zip), or
-    +   [csv](csvs.zip) format, or
-* the example resources in
-    +   [json](examples.json.zip),
-    +   [xml](examples.xml.zip) or
-    +   [ttl](examples.ttl.zip) format.
+* the definition resources in [json](definitions.json.zip), [xml](definitions.xml.zip), [ttl](definitions.ttl.zip), or [csv](csvs.zip) format, or
+* the example resources in [json](examples.json.zip), [xml](examples.xml.zip) or [ttl](examples.ttl.zip) format.
+
+The source code for this Implementation Guide can be found on [https://github.com/IHE/ACDC](https://github.com/IHE/ACDC).
