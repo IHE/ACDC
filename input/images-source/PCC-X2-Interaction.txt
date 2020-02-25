@@ -1,7 +1,0 @@
-@startuml
-hide footbox
-participant "Artifact\nConsumer" as AC
-participant "Clinical Knowledge\nRepository" as CKR
-AC -> CKR ++ : Retrieve Artifact Request
-return Retrieve Artifact Response
-@enduml

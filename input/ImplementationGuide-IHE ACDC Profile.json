@@ -57,32 +57,10 @@
 			{
 				"reference" :
 				{
-					"reference" : "StructureDefinition/ihe-acdc-contained-questionnairereference"
-				 },
-
-				"name" : "IHE ACDC Contained Questionnaire Reference Extension",
-				"description" : "Defines the Contained Questionnaire Reference URL Extension used on QuestionnaireResponse Resources used by the IHE ACDC Profile",
-				"exampleBoolean" : false
-			 },
-
-			{
-				"reference" :
-				{
-					"reference" : "StructureDefinition/questionnaire-launchurl"
-				 },
-
-				"name" : "IHE ACDC Launch URL Extension",
-				"description" : "Defines the Launch URL Extension used on Questionnaire Resources used by the IHE ACDC Profile",
-				"exampleBoolean" : false
-			 },
-
-			{
-				"reference" :
-				{
 					"reference" : "StructureDefinition/ihe-acdc-questionnaire"
 				 },
 
-				"name" : "IHE ACDC Questionnaire Profile",
+				"name" : "6.6.107 IHE ACDC Questionnaire Profile",
 				"description" : "Defines constraints and extensions on the Questionnaire Resource for questionnaires used with the IHE ACDC Profile",
 				"exampleBoolean" : false
 			 },
@@ -93,8 +71,30 @@
 					"reference" : "StructureDefinition/ihe-acdc-questionnaireresponse"
 				 },
 
-				"name" : "IHE ACDC QuestionnaireResponse Profile",
+				"name" : "6.6.108 IHE ACDC QuestionnaireResponse Profile",
 				"description" : "Defines constraints and extensions on the QuestionnaireResponse Resource for responses used with the IHE ACDC Profile",
+				"exampleBoolean" : false
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "StructureDefinition/questionnaire-launchurl"
+				 },
+
+				"name" : "6.7.3 IHE ACDC Launch URL Extension",
+				"description" : "Defines the Launch URL Extension used on Questionnaire Resources used by the IHE ACDC Profile",
+				"exampleBoolean" : false
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "StructureDefinition/ihe-acdc-contained-questionnairereference"
+				 },
+
+				"name" : "6.7.4 IHE ACDC Contained Questionnaire Reference Extension",
+				"description" : "Defines the Contained Questionnaire Reference URL Extension used on QuestionnaireResponse Resources used by the IHE ACDC Profile",
 				"exampleBoolean" : false
 			 },
 
@@ -155,7 +155,7 @@
 				 },
 
 				"name" : "QuestionnaireResponse-ihe-acdc-example-PHQ-2-questionnaireresponse",
-				"description": "An instance of PHQ-2 Depression Screening Assessment Instrument for the example patient",
+				"description" : "An instance of PHQ-2 Depression Screening Assessment Instrument for the example patient",
 				"exampleCanonical" : "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
 			 },
 
@@ -167,6 +167,72 @@
 
 				"name" : "Status Values allowed in a QuestionnaireResponse resource",
 				"description" : "Defines the Status Values allowed in a QuestionnaireResponse resource used withe IHE ACDC Profile"
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "StructureDefinition/ihe-acdc-queryartifact-auditevent"
+				 },
+
+				"name" : "IHE ACDC Query Artifact AuditEvent Profile",
+				"description" : "Defines constraints and extensions on the AuditEvent Resource for audit messages used with the IHE ACDC Profile [PCC-71] Request Assessment Transaction",
+				"exampleBoolean" : false
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "StructureDefinition/ihe-acdc-reportassessment-auditevent"
+				 },
+
+				"name" : "IHE ACDC Report Assessment AuditEvent Profile",
+				"description" : "Defines constraints and extensions on the AuditEvent Resource for audit messages used with the IHE ACDC Profile [PCC-73] Request Assessment Transaction",
+				"exampleBoolean" : false
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "StructureDefinition/ihe-acdc-requestassessment-auditevent"
+				 },
+
+				"name" : "IHE ACDC Request Assessment AuditEvent Profile",
+				"description" : "Defines constraints and extensions on the AuditEvent Resource for audit messages used with the IHE ACDC Profile [PCC-72] Request Assessment Transaction",
+				"exampleBoolean" : false
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "AuditEvent/ACDCExampleQueryArtifactAuditEvent"
+				 },
+
+				"name" : "AuditEvent-ACDCExampleQueryArtifactAuditEvent",
+                "description" : "An example of a populated AuditEvent sent on completion of the IHE [PCC-71] Query Artifact transaction.",
+				"exampleCanonical" : "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-queryartifact-auditevent"
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "AuditEvent/ACDCExampleReportAssessmentAuditEvent"
+				 },
+
+				"name" : "AuditEvent-ACDCExampleReportAssessmentAuditEvent",
+                "description" : "An example of a populated AuditEvent sent on completion of the IHE [PCC-73] Report Assessment transaction.",
+				"exampleCanonical" : "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-reportassessment-auditevent"
+			 },
+
+			{
+				"reference" :
+				{
+					"reference" : "AuditEvent/ACDCExampleRequestAssessmentAuditEvent"
+				 },
+
+				"name" : "AuditEvent-ACDCExampleRequestAssessmentAuditEvent",
+                "description" : "An example of a populated AuditEvent sent on completion of the IHE [PCC-72] Request Assessment transaction.",
+				"exampleCanonical" : "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-requestassessment-auditevent"
 			 },
 
 			{
@@ -200,7 +266,17 @@
 				"name" : "Example Pracitioner",
 				"description" : "Example pracitioner from FHIR specification",
 				"exampleBoolean" : true
-			 }
+			 },
+            {
+                "reference" :
+                {
+                    "reference" : "Device/device-example"
+                 },
+
+                "name" : "Example Device",
+                "description" : "Example device",
+                "exampleBoolean" : true
+             }
 		 ],
 
 		"page" :
@@ -230,13 +306,19 @@
 
 						{
 							"nameUrl" : "profileoptions.html",
-							"title" : "IHE ACDC Profile Options",
+							"title" : "IHE ACDC Actor Options",
 							"generation" : "markdown"
 						 },
 
 						{
 							"nameUrl" : "securityconsiderations.html",
 							"title" : "IHE ACDC Security Considerations",
+							"generation" : "markdown"
+						 },
+
+						{
+							"nameUrl" : "crossprofileconsiderations.html",
+							"title" : "IHE ACDC Cross Profile Considerations",
 							"generation" : "markdown"
 						 }
 					 ]
@@ -250,25 +332,19 @@
 					[
 						{
 							"nameUrl" : "queryartifact.html",
-							"title" : "[PCC-X1] Query Artifact Transaction",
-							"generation" : "markdown"
-						 },
-
-						{
-							"nameUrl" : "retrieveartifact.html",
-							"title" : "[PCC-X2] Retrieve Artifact Transaction",
+							"title" : "3.71 [PCC-71] Query Artifact Transaction",
 							"generation" : "markdown"
 						 },
 
 						{
 							"nameUrl" : "requestassessment.html",
-							"title" : "[PCC-X3] Request Assessment Transaction",
+							"title" : "3.72 [PCC-72] Request Assessment Transaction",
 							"generation" : "markdown"
 						 },
 
 						{
 							"nameUrl" : "reportassessment.html",
-							"title" : "[PCC-X4] Report Assessment Transaction",
+							"title" : "3.72 [PCC-73] Report Assessment Transaction",
 							"generation" : "markdown"
 						 }
 					 ]
@@ -279,11 +355,12 @@
 					"title" : "IHE ACDC Content Profiles",
 					"generation" : "markdown"
 				 },
+
 				{
-                    "nameUrl" : "appendixz.html",
-                    "title" : "IHE ITI Appendix Z: IHE Appendix on HL7\u00ae FHIR\u00ae Release 2.1",
-                    "generation" : "markdown"
-                 }
+					"nameUrl" : "appendixz.html",
+					"title" : "IHE ITI Appendix Z: IHE Appendix on HL7\u00ae FHIR\u00ae Release 2.1",
+					"generation" : "markdown"
+				 }
 			 ]
 		 },
 

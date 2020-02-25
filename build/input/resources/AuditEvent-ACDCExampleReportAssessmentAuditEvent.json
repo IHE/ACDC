@@ -1,0 +1,9 @@
+{
+  "resourceType": "AuditEvent",
+  "id": "ACDCExampleReportAssessmentAuditEvent",
+  "meta": {
+    "profile": [
+      "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-reportassessment-auditevent"
+    ]
+  }
+}

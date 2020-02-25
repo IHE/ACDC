@@ -3,7 +3,7 @@ agent "Clinical Knowledge\nRepository" as CKR
 agent "Artifact\nConsumer" as AC
 agent "Assement\nRequester" as AR
 agent "Assessor\n" as A
-CKR -- AC : "Query Artifact [PCC-X1] ↓\nRetrieve Artifact [PCC-X2]↓"
-AR -- A : "Request Assessment [PCC-X3] ↓\nReport Assessment [PCC-X4]↑"
+CKR -- AC : "Query Artifact [PCC-71] ↓"
+AR -- A : "Request Assessment [PCC-72] ↓\nReport Assessment [PCC-73]↑"
 
 @enduml

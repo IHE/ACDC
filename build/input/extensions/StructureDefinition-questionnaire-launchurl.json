@@ -1,0 +1,68 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "questionnaire-launchurl",
+  "url": "http://ihe.net/fhir/ACDC/StructureDefinition/questionnaire-launchurl",
+  "version": "0.1.0",
+  "name": "ACDCLauchURLExtension",
+  "title": "IHE ACDC Launch URL Extension",
+  "status": "active",
+  "description": "Defines the Launch URL Extension used on Questionnaire Resources used by the IHE ACDC Profile",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://ihe.net/fhir/ACDC/StructureDefinition/questionnaire-launchurl"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Extension.valueUri",
+        "path": "Extension.valueUri",
+        "min": 1
+      }
+    ]
+  }
+}

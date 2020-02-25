@@ -4,6 +4,8 @@ Title:          "IHE ACDC Assessment Requester Actor Capability Statement"
 * id = "acdc-actor-assessmentrequestor"
 * name = "ACDC_AssessmentRequester"
 * kind = #requirements
+* status = #active
+* date = "2020-02-25"
 * format[0] = #xml
 * format[1] = #json
 * fhirVersion = #4.0.1
@@ -26,7 +28,7 @@ endpoints using the oauth-uris extension described at [http://www.hl7.org/fhir/s
 * rest[0].resource.profile =  "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
 * rest[0].resource.documentation = "The AssessmentRequester Actor responds to QuestionnaireResponse create interactions."
 * rest[0].resource.interaction.code = #create
-* rest[0].resource.interaction.documentation = """This interaction corresponds to the IHE PCC-X4 transaction.
+* rest[0].resource.interaction.documentation = """This interaction corresponds to the IHE PCC-73 transaction.
 When the QuestionnaireResponse is created, it may include a contained copy of the Questionnaire
 resource that was used to produce the response.  This has proven to be helpful to facilite consumption
 as it avoids additional retrievals of the questionnaire resource by the AssessmentRequester"""

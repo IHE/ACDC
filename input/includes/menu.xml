@@ -21,16 +21,13 @@
         <a href="transactions.html">Transactions Overview</a>
       </li>
       <li>
-        <a href="queryartifact.html">[PCC-X1] Query Artifact</a>
+        <a href="queryartifact.html">[PCC-71] Query Artifact</a>
       </li>
       <li>
-        <a href="retrieveartifact.html">[PCC-X2] Retrieve Artifact</a>
+        <a href="requestassessment.html">[PCC-72] Request Assessment</a>
       </li>
       <li>
-        <a href="requestassessment.html">[PCC-X3] Request Assessment</a>
-      </li>
-      <li>
-        <a href="reportassessment.html">[PCC-X4] Report Assessment</a>
+        <a href="reportassessment.html">[PCC-73] Report Assessment</a>
       </li>
     </ul>
   </li>
@@ -40,10 +37,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="ihe-acdc-questionnaire.html">Questionnaire Resource</a>
+        <a href="StructureDefinition-ihe-acdc-questionnaire.html">Questionnaire Resource</a>
       </li>
       <li>
-        <a href="ihe-acdc-questionnaireresponse.html">Questionnaire Response Resource</a>
+        <a href="StructureDefinition-ihe-acdc-questionnaireresponse.html">Questionnaire Response Resource</a>
       </li>
       <li>
         <a href="extension-questionnaire-launchurl.html">Launch URL Extension</a>

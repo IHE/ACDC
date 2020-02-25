@@ -20,7 +20,11 @@
           "interaction": [
             {
               "code": "search-type",
-              "documentation": "This interaction corresponds to the IHE PCC-X1 and PCC-X2 transactions."
+              "documentation": "This interaction corresponds to the Search Artifcact Message of the IHE PCC-71 transaction."
+            },
+            {
+              "code": "read",
+              "documentation": "This interaction corresponds to the Read Artifcact Message of the IHE PCC-71 transaction."
             }
           ]
         }

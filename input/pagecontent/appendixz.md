@@ -1,3 +1,8 @@
+<style type="text/css">
+/* Hack to align content with IHE Profile numbering */
+h2, h3, h4, h5, h6 {
+    --heading-prefix: "Z";
+}</style>
 # Introduction to Appendix Z
 
 This content is a copy of the
@@ -26,10 +31,12 @@ based applications. There is some common explanation and profiling provided in t
 and update of Appendix E in ITI Technical Framework Volume 2x.
 
 ## Open Issues and Questions
+{: style="--heading-prefix: ''"}
 
 *   None
 
 ## Closed Issues
+{: style="--heading-prefix: ''"}
 
 *   IHE Domain Coordination Committee is being asked to set policy that all IHE profiles will be using FHIR R4 by
     the end of 2019. Thus, IHE profiles are all using the same FHIR version.
@@ -142,7 +149,8 @@ References are described in FHIR [references](http://hl7.org/fhir/R4/references.
 
 This section has no specific constraints.
 
-### <span id='Z6'>Populating the Expected Response Format</Z6>
+<span id='Z6'> </span>
+### Populating the Expected Response Format
 The FHIR standard provides for response message content encoded as either XML or JSON. The
 server actor shall support both message encodings, whilst the client actors shall support
 one and may optionally support both.
@@ -369,6 +377,8 @@ X
     an error due to the presence of the element.
 
 ## Appendix E Usage of the CX Data Type in PID-3 Patient Identifier List
+{: style="--heading-prefix: ''" }
+
 <div style='border: 1px solid black;'>
 Add the following new section to the end of ITI TF-2x: Appendix E Usage of the CX Data Type in
 PID-3 Patient Identifier List
@@ -376,6 +386,8 @@ PID-3 Patient Identifier List
 
 <span id='E3'> </span>
 ### E.3 FHIR Identifier Type
+{: style="--heading-prefix: 'E.3'" }
+
 The HL7 FHIR standard uses the data type Identifier to express a business identifier that uniquely
 identifies a thing or object (see FHIR [Datatypes#identifier](http://hl7.org/fhir/R4/datatypes.html#identifier)
 including medical record numbers or patient identifiers. See Appendix Z.9.1 for general guidance on FHIR

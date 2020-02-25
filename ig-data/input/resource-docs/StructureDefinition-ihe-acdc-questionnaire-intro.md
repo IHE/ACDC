@@ -1,6 +1,6 @@
 ## Introduction
 The IHE ACDC Questionnaire Profile defines the constraints on Questionnaire resources returned by the
-PCC-X2 transaction, and referenced by the QuestionnaireResponse resource used in the PCC-X4 transaction.
+PCC-71 transaction, and referenced by the QuestionnaireResponse resource used in the PCC-73 transaction.
 This resource describes the Questionnaire that represents an Assessment that can be performed on a
 patient.
 

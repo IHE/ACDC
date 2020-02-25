@@ -1,7 +1,0 @@
-@startuml
-agent "Clinical Knowledge\nRepository" as CKR
-agent "Artifact Consumer" as AC
-usecase (Retrieve Artifact\n[PCC-X2]) as (PCCX2)
-CKR --> (PCCX2)
-AC --> (PCCX2)
-@enduml

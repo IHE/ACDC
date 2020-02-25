@@ -1,0 +1,8 @@
+{
+  "resourceType": "Device",
+  "id": "device-example",
+  "deviceName": [{
+	  "name": "Security Service",
+	  "type": "other"
+  }]
+}

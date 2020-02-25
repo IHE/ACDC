@@ -37,18 +37,10 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/ihe-acdc-contained-questionnairereference"
+          "reference": "StructureDefinition/ihe-acdc-queryartifact-auditevent"
         },
-        "name": "IHE ACDC Contained Questionnaire Reference Extension",
-        "description": "Defines the Contained Questionnaire Reference URL Extension used on QuestionnaireResponse Resources used by the IHE ACDC Profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/questionnaire-launchurl"
-        },
-        "name": "IHE ACDC Launch URL Extension",
-        "description": "Defines the Launch URL Extension used on Questionnaire Resources used by the IHE ACDC Profile",
+        "name": "IHE ACDC Query Artifact AuditEvent Profile",
+        "description": "Defines constraints and extensions on the AuditEvent Resource for audit messages used with the IHE ACDC Profile [PCC-71] Query Artifact Transaction",
         "exampleBoolean": false
       },
       {
@@ -69,52 +61,109 @@
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/acdc-actor-artifactconsumer"
+          "reference": "StructureDefinition/ihe-acdc-reportassessment-auditevent"
         },
-        "name": "CapabilityStatement-acdc-actor-artifactconsumer",
-        "exampleBoolean": true
+        "name": "IHE ACDC Report Assessment AuditEvent Profile",
+        "description": "Defines constraints and extensions on the AuditEvent Resource for audit messages used with the IHE ACDC Profile [PCC-73] Request Assessment Transaction",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/acdc-actor-assessmentrequestor"
+          "reference": "StructureDefinition/ihe-acdc-requestassessment-auditevent"
         },
-        "name": "CapabilityStatement-acdc-actor-assessmentrequestor",
-        "exampleBoolean": true
+        "name": "IHE ACDC Request Assessment AuditEvent Profile",
+        "description": "Defines constraints and extensions on the AuditEvent Resource for audit messages used with the IHE ACDC Profile [PCC-72] Request Assessment Transaction",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/acdc-actor-assessor"
+          "reference": "StructureDefinition/ihe-acdc-contained-questionnairereference"
         },
-        "name": "CapabilityStatement-acdc-actor-assessor",
-        "exampleBoolean": true
+        "name": "IHE ACDC Contained Questionnaire Reference Extension",
+        "description": "Defines the Contained Questionnaire Reference URL Extension used on QuestionnaireResponse Resources used by the IHE ACDC Profile",
+        "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/acdc-actor-clinicalknowledgerepository"
+          "reference": "StructureDefinition/questionnaire-launchurl"
         },
-        "name": "CapabilityStatement-acdc-actor-clinicalknowledgerepository",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Questionnaire/ihe-acdc-example-PHQ-2-questionnaire"
-        },
-        "name": "Questionnaire-ihe-acdc-example-PHQ-2-questionnaire",
-        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"
-      },
-      {
-        "reference": {
-          "reference": "QuestionnaireResponse/ihe-acdc-example-PHQ-2-questionnaireresponse"
-        },
-        "name": "QuestionnaireResponse-ihe-acdc-example-PHQ-2-questionnaireresponse",
-        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
+        "name": "IHE ACDC Launch URL Extension",
+        "description": "Defines the Launch URL Extension used on Questionnaire Resources used by the IHE ACDC Profile",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ValueSet/ihe-acdc-questionnaireresponse-status"
         },
         "name": "Status Values allowed in a QuestionnaireResponse resource",
-        "description": "Defines the Status Values allowed in a QuestionnaireResponse resource used withe IHE ACDC Profile"
+        "description": "Defines the Status Values allowed in a QuestionnaireResponse resource used withe IHE ACDC Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "AuditEvent/ACDCExampleQueryArtifactAuditEvent"
+        },
+        "name": "IHE ACDC Example AuditEvent for the [PCC-71] Query Artifact transaction",
+        "description": "An example of a populated AuditEvent sent on completion of the IHE PCC-71 transaction.",
+        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-queryartifact-auditevent"
+      },
+      {
+        "reference": {
+          "reference": "AuditEvent/ACDCExampleReportAssessmentAuditEvent"
+        },
+        "name": "IHE ACDC Example AuditEvent for the [PCC-73] Report Assessment transaction",
+        "description": "An example of a populated AuditEvent sent on completion of the IHE PCC-73 transaction.",
+        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-reportassessment-auditevent"
+      },
+      {
+        "reference": {
+          "reference": "AuditEvent/ACDCExampleRequestAssessmentAuditEvent"
+        },
+        "name": "IHE ACDC Example AuditEvent for the [PCC-72] Request Assessment Transaction",
+        "description": "An example of a populated AuditEvent sent on completion of the IHE PCC-72 transaction.",
+        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-requestassessment-auditevent"
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/acdc-actor-artifactconsumer"
+        },
+        "name": "IHE ACDC Artifact Consumer Actor Capability Statement",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/acdc-actor-assessmentrequestor"
+        },
+        "name": "IHE ACDC Assessment Requester Actor Capability Statement",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/acdc-actor-assessor"
+        },
+        "name": "IHE ACDC Assessor Actor Capability Statement",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/acdc-actor-clinicalknowledgerepository"
+        },
+        "name": "IHE ACDC Clinical Knowledge Resource Repository Actor Capability Statement",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Questionnaire/ihe-acdc-example-PHQ-2-questionnaire"
+        },
+        "name": "IHE ACDC Example Questionnaire for PHQ-2",
+        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaire"
+      },
+      {
+        "reference": {
+          "reference": "QuestionnaireResponse/ihe-acdc-example-PHQ-2-questionnaireresponse"
+        },
+        "name": "IHE ACDC Example Questionnaire for PHQ-2",
+        "exampleCanonical": "http://ihe.net/fhir/ACDC/StructureDefinition/ihe-acdc-questionnaireresponse"
       }
     ],
     "page": {
@@ -124,7 +173,7 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "IHE ACDC Implementation Guide",
+          "title": "Home",
           "generation": "markdown"
         }
       ]

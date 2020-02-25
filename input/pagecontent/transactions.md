@@ -2,10 +2,9 @@
 This Volume II supplement describes the ACDC Transactions in detail.
 The ACDC Profile uses the following 4 IHE Transactions.
 
-1. [[PCC-X1] Query Artifact](queryartifact.html)
-2. [[PCC-X2] Retrieve Artifact](retrieveartifact.html)
-3. [[PCC-X3] Request Assessment](requestassessment.html)
-4. [[PCC-X4] Report Assessment](reportassessment.html)
+1. [[PCC-71] Query Artifact](queryartifact.html)
+2. [[PCC-72] Request Assessment](requestassessment.html)
+3. [[PCC-73] Report Assessment](reportassessment.html)
 
 #### Understanding the IHE Transaction Model
 Transaction descriptions are provided in Section 3. In each transaction description, the actors, the

@@ -1,0 +1,22 @@
+Slice: Source
+Parent: AuditEvent.agent
+Description: The agent that is the source of an action
+* role =  http://dicom.nema.org/resources/ontology/DCM#110153 "Source"
+* requestor = false
+
+Slice: Destination
+Parent: AuditEvent.agent
+Description: The agent that is the destination of an action
+* role =  http://dicom.nema.org/resources/ontology/DCM#110152 "Destination"
+* requestor = false
+
+Slice: HumanRequestor
+Parent: AuditEvent.agent
+Description: The agent that is human requestor of an action
+* requestor = true
+
+Slice: QueryParameters
+Parent: AuditEvent.entity
+Description: The Query Parameters associated with a query action
+* type = http://terminology.hl7.org/CodeSystem/audit-entity-type#2 "System Object"
+* role = http://terminology.hl7.org/CodeSystem/object-role#24 "Query"

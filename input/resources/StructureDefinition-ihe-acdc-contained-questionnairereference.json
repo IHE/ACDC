@@ -20,7 +20,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "QuestionnaireResponse.questionnaire"
+      "expression": "Element"
     }
   ],
   "type": "Extension",

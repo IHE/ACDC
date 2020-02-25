@@ -8,6 +8,7 @@ Title:          "IHE ACDC Example Questionnaire for PHQ-2"
 * title = "Patient Health Questionnaire-2"
 * date = "2020-02-15"
 * publisher = "Integrating the Healthcare Enterprise (IHE)"
+* status = #active
 * purpose = "The PHQ-2 is the ultra-brief depression measure (using first 2 items of PHQ-9) and ranges from 0-6. Most who use the short PHQ-2 use it for screening and not for monitoring depression"
 * description = "Implements the PHQ-2 Depression Screening Assessment Instrument as a FHIR Questionnaire Resource"
 * code = http://loinc.org#55757-9

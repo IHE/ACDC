@@ -1,0 +1,8 @@
+@startuml
+hide footbox
+participant "Artifact\nConsumer" as AC
+participant "Clinical Knowledge\nRepository" as CKR
+activate AC
+AC -> CKR ++ : "Query Artifact Request [PCC-71]"
+return "Query Artifact Response [PCC-71]"
+@enduml

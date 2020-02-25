@@ -1,0 +1,14 @@
+@startuml
+hide footbox
+participant "Assessment\nRequestor" as AR
+participant "Assessor\n" as A
+
+activate AR
+AR -> A ++ : "Request Assessment [PCC-72]"
+A -> AR : "Report Assessment (Create) [PCC-73]"
+deactivate A
+
+A -> AR : "Report Assessment (Update) [PCC-73]"
+activate A
+deactivate A
+@enduml

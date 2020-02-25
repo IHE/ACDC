@@ -1,7 +1,0 @@
-@startuml
-agent "Assessment\nRequester" as CKR
-agent "Assessor" as AC
-usecase (Request\nAssessment\n[PCC-X3]) as (PCCX3)
-CKR --> (PCCX3)
-AC --> (PCCX3)
-@enduml
